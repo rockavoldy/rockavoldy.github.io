@@ -8,7 +8,7 @@ tags:
     - Ubuntu
     - Windows
     - macOS
-cover:
+cover: ""
 fullscreen: false
 published: true
 ---

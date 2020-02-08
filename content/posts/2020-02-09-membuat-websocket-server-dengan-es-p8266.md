@@ -10,7 +10,9 @@ tags:
     - Arduino
     - Websocket
     - socket
-cover:
+cover: ""
 fullscreen: true
 published: true
 ---
+
+hello boy

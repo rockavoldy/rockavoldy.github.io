@@ -21,10 +21,10 @@
             >Home</g-link>
           </li>
           <li class="px-2">
-            <g-link
-              to="/about/"
+            <a
+              href="https://akhmad.id"
               class="border-b border-transparent hover:border-gray-400 transition-border-color"
-            >About</g-link>
+            >About</a>
           </li>
           <li class="px-2">
             <a
