@@ -40,9 +40,10 @@ module.exports = {
       }
     },
     {
-      use: "@gridsome/plugin-google-analytics",
+      use: "gridsome-plugin-gtm",
       options: {
-        id: "G-SSJJDEH4S6"
+        id: "G-SSJJDEH4S6",
+        enabled: true
       }
     },
     {
