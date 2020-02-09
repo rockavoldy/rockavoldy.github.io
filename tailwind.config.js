@@ -525,6 +525,5 @@ module.exports = {
     wordBreak: ["responsive"],
     zIndex: ["responsive"]
   },
-  corePlugins: {},
-  plugins: [require("tailwindcss-transitions")()]
+  corePlugins: {}
 };
