@@ -25,7 +25,7 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "content/posts/**/*.md",
+        path: "content/posts/*.md",
         typeName: "Post",
         refs: {
           tags: {
@@ -42,15 +42,13 @@ module.exports = {
     {
       use: "gridsome-plugin-gtm",
       options: {
-        id: "G-SSJJDEH4S6",
-        enabled: true
+        id: "G-SSJJDEH4S6"
       }
     },
     {
       use: "@gridsome/plugin-sitemap",
       options: {
-        cacheTime: 600000,
-        exclude: ["./content/posts/drafts"]
+        cacheTime: 600000
       }
     },
     {

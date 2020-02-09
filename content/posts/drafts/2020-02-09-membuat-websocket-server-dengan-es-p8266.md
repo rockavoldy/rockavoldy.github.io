@@ -1,6 +1,6 @@
 ---
 title: "Membuat Websocket Server dengan ESP8266"
-slug: membuat-websocket-server-dengan-esp8266
+slug: ""
 description: ""
 date: 2020-02-09 04:12:45
 author: akhmad

@@ -1,6 +1,6 @@
 ---
 title: "Mengapa Aplikasi di Ubuntu lebih kecil ukurannya"
-slug:
+slug: ""
 description: ""
 date: 2020-02-09 04:51:41
 author: akhmad
