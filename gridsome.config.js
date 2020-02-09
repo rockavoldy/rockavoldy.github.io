@@ -1,5 +1,5 @@
 module.exports = {
-  siteName: "Blog | Akhmad",
+  siteName: "Blog",
   siteDescription:
     "Catatan, pengingat, dan build log project open-source. Ada juga tulisan opini, tutorial, dan teknologi yang menarik untuk dibahas.",
   siteUrl: "https://blog.akhmad.id",
@@ -49,7 +49,8 @@ module.exports = {
     {
       use: "@gridsome/plugin-sitemap",
       options: {
-        cacheTime: 600000 // default
+        cacheTime: 600000,
+        exclude: ["/drafts"]
       }
     },
     {
