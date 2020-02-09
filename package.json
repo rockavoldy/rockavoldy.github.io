@@ -5,7 +5,8 @@
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "newpost": "node scripts/newPost.js"
+    "newpost": "node scripts/newPost.js",
+    "newdraft": "node scripts/newDraft.js"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.0.5",
