@@ -34,3 +34,13 @@ Karena aplikasi dan library pada linux biasanya _open-source_, keamanan adalah a
 Jadi, OS yang baru rilis beberapa hari boleh dicoba, tetapi biasanya belum bisa dipakai untuk _daily usage_ karena masih terdapat banyaknya _bug_, dan juga aplikasi yang masih terbatas untuk bisa dipakai diversi terbaru itu.
 
 > If it ain't broke, don't fix it
+
+Beberapa sumber:
+
+-   [gentoo wiki](https://wiki.gentoo.org/wiki/Why_not_bundle_dependencies)
+-   [snapcraft.io](https://snapcraft.io/docs/getting-started)
+-   [appimage](https://appimage.org)
+-   [ostechnix](https://www.ostechnix.com/linux-package-managers-compared-appimage-vs-snap-vs-flatpak/)
+-   [Quora](https://www.quora.com/Why-was-dependency-hell-a-thing-in-Linux-Why-couldnt-the-source-package-just-include-the-necessary-requirements-and-link-to-a-directory-in-a-Makefile)
+-   [Quora](https://www.quora.com/Why-do-Linux-software-repositories-sometimes-have-severely-out-dated-packages?share=1)
+-   [stackexchange](https://unix.stackexchange.com/questions/265271/why-linux-has-so-many-dependency-problems-when-installing-software-while-windows)
