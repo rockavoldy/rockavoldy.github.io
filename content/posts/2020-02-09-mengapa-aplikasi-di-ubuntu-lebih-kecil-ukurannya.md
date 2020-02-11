@@ -12,7 +12,7 @@ fullscreen: false
 published: true
 ---
 
-Kalian yang baru migrasi dari Windows atau macOS ke Linux khususnya ubuntu bertanya-tanya "Kenapa aplikasi di ubuntu lebih kecil ukurannya daripada yang ada di Windows/macOS?". Saya akan mencoba menjawab pertanyaan ini dari pengalaman Saya sendiri dan juga rangkuman dari tulisan yang ada di internet.
+Kalian yang baru migrasi dari Windows atau macOS ke Linux khususnya ubuntu bertanya-tanya "Kenapa aplikasi di ubuntu lebih kecil ukurannya daripada yang ada di Windows atau macOS?". Saya akan mencoba menjawab pertanyaan ini dari pengalaman Saya sendiri dan juga rangkuman dari tulisan yang ada di internet.
 
 Bisa dilihat ketika _install_ aplikasi. Pada Windows biasanya dikemas dalam satu paket _installer_ yang setelah dipasang langsung bisa digunakan meskipun pemasangan sedang tidak terkoneksi internet. Berbeda pada Ubuntu, aplikasi utama akan dipasang setelah _dependency/library_ yang dibutuhkan sudah ada di sistem, dimana _package manager_ biasanya akan memasang sendiri dengan mengunduh langsung dari _repository_. Pada Windows _dependency/library_ ini biasanya sudah termasuk pada paket _installer_ itu sendiri kecuali beberapa shared object seperti .NET Framework dan lainnya. Hal ini juga menjadi salah satu penyebab _size_ sistem yang dibutuhkan pada Windows lebih besar daripada Ubuntu karena banyaknya \*.dll\* yang _duplicate_.
 
@@ -31,9 +31,7 @@ Kasus diatas biasa disebut _Dependency hell_. Bisa dilihat bagaimana ketergantun
 Tetapi meskipun kelihatannya ini menyebabkan banyak masalah, kenapa sampai sekarang tidak membuat _package manager_ seperti Snapcraft, Flatpak, dan AppImage menjadi _default_?
 Karena aplikasi dan library pada linux biasanya _open-source_, keamanan adalah alasan kenapa _dependency_ yang diperlukan oleh aplikasi tidak di _bundle_ dalam 1 paket. Ketika terdapat masalah keamanan seperti sebuah _library_ terdapat bug bisa akses remote tanpa _auth_ apapun, ketika _maintainer_ mendapatkan laporan, akan segera diperbaiki dan user akan diberitahu untuk mengupdate _library_ tersebut. Hal ini tidak akan bisa diatasi dengan cepat jika _library_ itu ada dalam 1 paket aplikasi.
 
-Jadi, OS yang baru rilis beberapa hari boleh dicoba, tetapi biasanya belum bisa dipakai untuk _daily usage_ karena masih terdapat banyaknya _bug_, dan juga aplikasi yang masih terbatas untuk bisa dipakai diversi terbaru itu.
-
-> If it ain't broke, don't fix it
+Jadi, OS yang baru rilis beberapa hari boleh dicoba untuk mengobati rasa penasaran tentang fitur baru, tetapi biasanya belum bisa dipakai untuk _daily usage_ karena masih terdapat banyaknya _bug_, dan juga aplikasi yang masih terbatas untuk bisa dipakai diversi terbaru itu. Saya biasanya menunggu sekitar 6 bulan dari awal rilis versi itu sebelum upgrade untuk daily usage, agar OS yang nantinya akan digunakan lebih stabil, dan juga menunggu ketersediaan aplikasi yang biasa saya pakai sudah resmi tersedia. Ada ungkapan yang biasa muncul di komunitas, "If it ain't broke, don't fix it".
 
 Beberapa sumber:
 
