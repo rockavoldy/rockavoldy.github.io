@@ -4,11 +4,8 @@
   >
     <div class="w-full sm:w-1/2 mb-4 sm:mb-0">
       <p>
-        Build with &hearts; Based on
-        <a
-          href="https://github.com/cossssmin/gridsome-starter-bleda"
-          class="border-b border-transparent hover:border-gray-400 transition-border-color"
-        >Bleda</a>
+        Build with &hearts; in
+        <strong>Bandung</strong>
       </p>
     </div>
     <div class="w-full sm:w-1/2">
