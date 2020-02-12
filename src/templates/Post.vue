@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    <Navbar />
     <main>
       <post-header :post="$page.post" />
 
@@ -80,13 +81,15 @@
 <script>
 import moment from "moment";
 import config from "~/.temp/config.js";
+import Navbar from "@/components/Navbar";
 import Alert from "@/components/Alert";
 import slugify from "@sindresorhus/slugify";
 import SiteFooter from "@/components/Footer";
-import PostHeader from "~/components/PostHeader";
+import PostHeader from "@/components/PostHeader";
 
 export default {
   components: {
+    Navbar,
     Alert,
     PostHeader,
     SiteFooter

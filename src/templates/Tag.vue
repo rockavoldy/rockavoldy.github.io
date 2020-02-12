@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    <Navbar />
     <main>
       <header>
         <div
@@ -39,12 +40,14 @@
 <script>
 import moment from "moment";
 import config from "~/.temp/config.js";
+import Navbar from "@/components/Navbar";
 import PostItem from "@/components/PostItem";
 import SiteFooter from "@/components/Footer";
 import Pagination from "@/components/Pagination";
 
 export default {
   components: {
+    Navbar,
     PostItem,
     Pagination,
     SiteFooter

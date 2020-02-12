@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    <Navbar />
     <main>
       <section>
         <post-item v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
@@ -12,6 +13,7 @@
 
 <script>
 import config from "~/.temp/config.js";
+import Navbar from "@/components/Navbar";
 import SiteFooter from "@/components/Footer";
 import PostItem from "@/components/PostItem";
 import Pagination from "@/components/Pagination";
@@ -20,7 +22,8 @@ export default {
   components: {
     PostItem,
     Pagination,
-    SiteFooter
+    SiteFooter,
+    Navbar
   },
   metaInfo() {
     return {

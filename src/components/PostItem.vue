@@ -1,14 +1,17 @@
 <template>
-  <article>
-    <div class="mx-auto max-w-3xl px-6">
-      <div class="py-8 sm:py-20 border-b border-gray-300">
+  <article class="mt-16 md:mt-20 lg:mt-24">
+    <div class="mx-auto max-w-3xl px-6 shadow border rounded-sm">
+      <div class="py-8 border-b border-gray-300">
         <header class="text-center mb-8">
           <time
             :datetime="post.datetime"
             class="text-gray-700 text-xs mb-2 uppercase"
           >{{ formatPublishDate(post.datetime) }}</time>
           <h2 class="text-2xl sm:text-3xl leading-tight font-sans mb-1 sm:mb-2">
-            <g-link :to="`${post.path}/`" class="text-black font-bold">{{ post.title }}</g-link>
+            <g-link
+              :to="`${post.path}/`"
+              class="border-b border-transparent hover:border-gray-700 transition-border-color text-black font-bold"
+            >{{ post.title }}</g-link>
           </h2>
           <p class="text-gray-700 leading-normal text-sm sm:text-base">
             <span v-if="post.author">
