@@ -32,7 +32,7 @@
         </parallax>
       </ClientOnly>
     </div>
-    <div v-else class="pt-24">
+    <div v-else class="mt-6 md:mt-14 lg:mt-20">
       <div class="max-w-xl md:max-w-3xl xl:max-w-4xl mx-auto text-center px-6">
         <p class="text-gray-700 text-xs mb-2 uppercase">{{ post.timeToRead }} min read</p>
         <h1

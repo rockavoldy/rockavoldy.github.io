@@ -1,6 +1,6 @@
 <template>
-  <article class="mt-16 md:mt-20 lg:mt-24">
-    <div class="mx-auto max-w-3xl px-6 shadow border rounded-sm">
+  <article class="mt-6 md:mt-14 lg:mt-20">
+    <div class="mx-auto max-w-3xl px-6">
       <div class="py-8 border-b border-gray-300">
         <header class="text-center mb-8">
           <time
