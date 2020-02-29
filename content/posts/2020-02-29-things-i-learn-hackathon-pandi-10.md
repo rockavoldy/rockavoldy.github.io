@@ -9,6 +9,7 @@ tags:
     - Lomba
 cover:
 fullscreen: false
+published: true
 ---
 
 ### Hackathon Pandi 10
