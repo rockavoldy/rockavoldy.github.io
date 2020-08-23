@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="container mx-auto w-full justify-center flex flex-wrap">
-      <div class="text-center mt-10 md:mt-20 lg:mt-32" id="home">
+      <div class="text-center mt-10 md:mt-20 lg:mt-32">
         <div>
           <h1 class="text-2xl md:text-3xl lg:text-4xl font-medium">
             Hello, I'm
