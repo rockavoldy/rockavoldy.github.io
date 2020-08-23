@@ -1,10 +1,15 @@
 <template>
-  <nav class="w-full flex justify-end p-4">
+  <nav class="w-full flex justify-between p-4">
+    <div class="nav__head">
+      <router-link class="nav__link-head" to="/">
+        <h1>Ahmad</h1>
+      </router-link>
+    </div>
     <div id="nav">
       <ul class="flex flex-row justify-around">
-        <li class="mx-2">
+        <!-- <li class="mx-2">
           <router-link class="nav__link" to="/">Home</router-link>
-        </li>
+        </li>-->
         <li class="mx-2">
           <router-link class="nav__link" to="/resume">Resume</router-link>
         </li>
@@ -42,5 +47,25 @@ export default {};
 #nav a.router-link-exact-active {
   @apply text-blue-700;
   @apply border-gray-700;
+}
+
+.nav__link-head {
+  @apply text-2xl;
+  @apply font-semibold;
+}
+
+.nav__link-head:hover {
+  @apply text-blue-700;
+  @apply transition;
+  @apply ease-in;
+  @apply duration-100;
+}
+
+.nav__head {
+  @apply px-2;
+}
+
+.nav__head a.router-link-exact-active {
+  @apply text-blue-700;
 }
 </style>
