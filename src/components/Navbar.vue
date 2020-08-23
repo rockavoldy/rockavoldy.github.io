@@ -25,17 +25,14 @@ export default {};
 
 <style>
 .nav__link {
-  @apply bg-gray-100;
-  @apply border;
-  @apply border-gray-400;
-  @apply px-3;
-  @apply py-1;
-  @apply rounded;
   @apply font-medium;
+  @apply border-b-2;
+  @apply px-2;
+  @apply py-1;
 }
 
 .nav__link:hover {
-  @apply bg-blue-100;
+  @apply text-blue-700;
   @apply border-gray-700;
   @apply transition;
   @apply ease-in;
@@ -43,7 +40,7 @@ export default {};
 }
 
 #nav a.router-link-exact-active {
-  @apply bg-blue-100;
+  @apply text-blue-700;
   @apply border-gray-700;
 }
 </style>

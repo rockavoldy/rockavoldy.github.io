@@ -2,13 +2,28 @@
   <div class="w-full">
     <ul class="flex flex-row justify-around text-center">
       <li>
-        <a class="socmed__link" target="_blank" href="https://twitter.com/Akhmad98_">Twitter</a>
+        <a
+          class="socmed__link"
+          target="_blank"
+          href="https://twitter.com/Akhmad98_"
+          >Twitter</a
+        >
       </li>
       <li>
-        <a class="socmed__link" target="_blank" href="https://github.com/rockavoldy">GitHub</a>
+        <a
+          class="socmed__link"
+          target="_blank"
+          href="https://github.com/rockavoldy"
+          >GitHub</a
+        >
       </li>
       <li>
-        <a class="socmed__link" target="_blank" href="https://facebook.com/rockavoldy">Facebook</a>
+        <a
+          class="socmed__link"
+          target="_blank"
+          href="https://facebook.com/rockavoldy"
+          >Facebook</a
+        >
       </li>
     </ul>
   </div>
@@ -33,7 +48,6 @@ export default {};
 
 .socmed__link:hover {
   @apply text-blue-700;
-  @apply border-b-2;
   @apply border-gray-700;
   @apply transition;
   @apply ease-in;
