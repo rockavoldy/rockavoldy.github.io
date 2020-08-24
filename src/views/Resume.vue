@@ -7,7 +7,7 @@
           <h3 class="font-bold text-xl uppercase mb-3">Education</h3>
           <div class="mb-2" v-for="(item, index) in education" :key="index">
             <h4 class="uppercase font-semibold">{{ item.school }}</h4>
-            <h6 class="text-sm capitalize">{{ item.date }}</h6>
+            <span class="text-sm capitalize">{{ item.date }}</span>
             <ul class="list-disc text-sm list-inside font-medium">
               <li v-for="(itemact, indexact) in item.activities" :key="indexact">{{ itemact }}</li>
             </ul>
@@ -19,7 +19,7 @@
           <h3 class="font-bold text-xl uppercase mb-3">Award</h3>
           <div class="mb-2" v-for="(item, index) in awards" :key="index">
             <h4 class="uppercase font-semibold">{{ item.title }}</h4>
-            <h6 class="text-sm capitalize">{{ item.date }}</h6>
+            <span class="text-sm capitalize">{{ item.date }}</span>
             <ul class="list-disc text-sm list-inside font-medium">
               <li v-for="(itemlist, indexlist) in item.list" :key="indexlist">{{ itemlist }}</li>
             </ul>
@@ -27,7 +27,19 @@
         </div>
         <hr class="mb-5" />
 
-        <!-- TODO: add Skills -->
+        <div class="w-auto flex flex-col mb-1">
+          <h3 class="font-bold text-xl uppercase mb-3">Skill</h3>
+          <div class="mb-2 flex flex-col" v-for="(item, index) in skills" :key="index">
+            <h6 class="uppercase font-bold text-sm">{{ item.title }}</h6>
+            <ul
+              class="list-none text-sm list-inside"
+              v-for="(itemlist, indexlist) in item.list"
+              :key="indexlist"
+            >
+              <li>{{ itemlist }}</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -60,6 +72,16 @@ export default {
             "This Hackathon organized by PANDI for 10th year celebration.",
             "This Hackatahon intended to use u.id on internet-based services."
           ]
+        }
+      ],
+      skills: [
+        {
+          title: "Intermediate",
+          list: ["PHP", "Codeigniter 3", "JavaScript", "Vue", "Linux", "Git"]
+        },
+        {
+          title: "Basic",
+          list: ["Laravel", "Nuxt", "Nodejs"]
         }
       ]
     };

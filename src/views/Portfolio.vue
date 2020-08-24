@@ -1,6 +1,7 @@
 <template>
   <div class="portfolio">
-    <h2 class="text-center text-2xl mb-2 uppercase font-semibold">Portfolio</h2>
+    <h2 class="text-center text-2xl uppercase font-semibold">Portfolio</h2>
+    <h5 class="text-center font-medium mb-2">Here is list of my existing project</h5>
     <div class="container mx-auto w-full md:w-8/12 lg:w-7/12 xl:w-5/12 flex flex-col">
       <div class="px-3 md:px-2 mx-auto justify-center flex flex-col">
         <div class="w-auto flex flex-col">
@@ -85,6 +86,27 @@ export default {
           desc: "This Static website build for promotion of MSCEIS 2019 event.",
           tech: "Vue, Vuetify",
           repo: "https://github.com/rockavoldy/msceis"
+        },
+        {
+          title: "Hue Controller",
+          desc:
+            "This app is to control WS2812B (Neopixel) connected to Wemos D1 Mini using Wireless.",
+          tech: "Vue, MQTT, Websocket, ESP8266, Arduino, Neopixel",
+          repo: "https://github.com/rockavoldy/Hue-Controller"
+        },
+        {
+          title: "Line bot Torrent downloader",
+          desc:
+            "This script is to get magnet text from LINE and will be forwarded to Torrent server using Transmission RPC.",
+          tech: "PHP, LINE Messaging API, Transmission RPC",
+          repo: "https://github.com/rockavoldy/LINEBotTorrentServer"
+        },
+        {
+          title: "Treasure Hunter",
+          desc:
+            "This is a final project for Object-Oriented Programming Courses.",
+          tech: "Java, Swing GUI",
+          repo: "https://github.com/rockavoldy/Pencarian-Harta-Karun"
         }
       ]
     };
