@@ -2,7 +2,7 @@
   <div class="resume">
     <h2 class="text-center text-2xl mb-2 uppercase font-semibold">Resume</h2>
     <div class="container mx-auto w-full md:w-8/12 lg:w-7/12 xl:w-5/12 flex flex-col">
-      <div class="mx-auto justify-center flex flex-col">
+      <div class="px-3 md:px-2 mx-auto justify-center flex flex-col">
         <div class="w-auto flex flex-col mb-1">
           <h3 class="font-bold text-xl uppercase mb-3">Education</h3>
           <div class="mb-2" v-for="(item, index) in education" :key="index">
@@ -16,8 +16,8 @@
         <hr class="mb-5" />
 
         <div class="w-auto flex flex-col mb-1">
-          <h3 class="font-bold text-xl uppercase mb-3">Reward</h3>
-          <div class="mb-2" v-for="(item, index) in reward" :key="index">
+          <h3 class="font-bold text-xl uppercase mb-3">Award</h3>
+          <div class="mb-2" v-for="(item, index) in awards" :key="index">
             <h4 class="uppercase font-semibold">{{ item.title }}</h4>
             <h6 class="text-sm capitalize">{{ item.date }}</h6>
             <ul class="list-disc text-sm list-inside font-medium">
@@ -27,21 +27,7 @@
         </div>
         <hr class="mb-5" />
 
-        <!-- <div class="w-auto flex flex-col mb-1">
-          <h3 class="font-semibold text-xl uppercase mb-3">Activities</h3>
-          <div class="mb-2" v-for="(item, index) in reward" :key="index">
-            <h4 class="uppercase font-medium">
-              {{ item.title }}
-            </h4>
-            <h6 class="text-sm capitalize">{{ item.date }}</h6>
-            <ul class="list-disc text-sm list-inside">
-              <li v-for="(itemlist, indexlist) in item.list" :key="indexlist">
-                {{ itemlist }}
-              </li>
-            </ul>
-          </div>
-        </div>
-        <hr class="mb-5" />-->
+        <!-- TODO: add Skills -->
       </div>
     </div>
   </div>
@@ -66,7 +52,7 @@ export default {
           activities: []
         }
       ],
-      reward: [
+      awards: [
         {
           title: "Finalist Hackathon PANDI 10",
           date: "24 April 2019",

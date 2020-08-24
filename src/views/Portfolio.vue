@@ -2,7 +2,7 @@
   <div class="portfolio">
     <h2 class="text-center text-2xl mb-2 uppercase font-semibold">Portfolio</h2>
     <div class="container mx-auto w-full md:w-8/12 lg:w-7/12 xl:w-5/12 flex flex-col">
-      <div class="mx-auto justify-center flex flex-col">
+      <div class="px-3 md:px-2 mx-auto justify-center flex flex-col">
         <div class="w-auto flex flex-col">
           <div class="mb-2" v-for="(item, index) in portfolio" :key="index">
             <h4 class="uppercase font-semibold text-lg">{{ item.title }}</h4>
