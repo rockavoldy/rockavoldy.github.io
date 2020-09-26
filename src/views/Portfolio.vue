@@ -39,10 +39,27 @@
                   </span>
                   <span class="px-1">
                     <a
-                      class="hover:text-blue-700 border-b hover:border-gray-700"
-                      :href="item.repo"
+                      :class="item.repo !== '' ? 'hover:text-blue-700 border-b hover:border-gray-700' : ''"
+                      :href="item.repo !== '' ? item.repo : false"
                       target="_blank"
-                    >View on GitHub</a>
+                    >{{ item.repo !== '' ? 'View on GitHub' : 'Private project.' }}</a>
+                  </span>
+                </li>
+
+                <li class="flex">
+                  <span>
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                      <path
+                        d="M3.9,12C3.9,10.29 5.29,8.9 7,8.9H11V7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H11V15.1H7C5.29,15.1 3.9,13.71 3.9,12M8,13H16V11H8V13M17,7H13V8.9H17C18.71,8.9 20.1,10.29 20.1,12C20.1,13.71 18.71,15.1 17,15.1H13V17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7Z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="px-1">
+                    <a
+                      :class="item.link !== '' ? 'border-b hover:text-blue-700 hover:border-gray-700' : ''"
+                      :href="item.link !== '' ? item.link : false"
+                      target="_blank"
+                    >{{ item.link !== "" ? item.link : "No demo available."}}</a>
                   </span>
                 </li>
               </ul>
@@ -65,48 +82,55 @@ export default {
           desc:
             "This apps build with a reason to help spliting bills when order food online with discount code.",
           tech: "Vue, TailwindCSS, PWA",
-          repo: "https://github.com/rockavoldy/hitungpromo"
+          repo: "https://github.com/rockavoldy/hitungpromo",
+          link: "https://akhmad.id/hitungpromo"
         },
         {
           title: "Decision Support System: Scholarship",
           desc:
             "This apps is final project for Introduction to the Decision Support System courses.",
           tech: "Vue, Codeigniter 3, Profile Matching Methode",
-          repo: "https://github.com/rockavoldy/Profile-Matching-SPK"
+          repo: "https://github.com/rockavoldy/Profile-Matching-SPK",
+          link: ""
         },
         {
           title: "KKN Schedule",
           desc:
             "This apps is to track KKN Schedule and documentation per day to make it easy when make report with documentation after KKN end.",
           tech: "Vue, Lumen 5.8, PHPOffice",
-          repo: "https://github.com/rockavoldy/Jadwal-KKN"
+          repo: "https://github.com/rockavoldy/Jadwal-KKN",
+          link: ""
         },
         {
           title: "MSCEIS 2019",
           desc: "This Static website build for promotion of MSCEIS 2019 event.",
           tech: "Vue, Vuetify",
-          repo: "https://github.com/rockavoldy/msceis"
+          repo: "https://github.com/rockavoldy/msceis",
+          link: "https://akhmad.id/msceis"
         },
         {
           title: "Hue Controller",
           desc:
             "This app is to control WS2812B (Neopixel) connected to Wemos D1 Mini using Wireless.",
           tech: "Vue, MQTT, Websocket, ESP8266, Arduino, Neopixel",
-          repo: "https://github.com/rockavoldy/Hue-Controller"
+          repo: "https://github.com/rockavoldy/Hue-Controller",
+          link: "https://hue.akhmad.id"
         },
         {
           title: "Line bot Torrent downloader",
           desc:
             "This script is to get magnet text from LINE and will be forwarded to Torrent server using Transmission RPC.",
           tech: "PHP, LINE Messaging API, Transmission RPC",
-          repo: "https://github.com/rockavoldy/LINEBotTorrentServer"
+          repo: "https://github.com/rockavoldy/LINEBotTorrentServer",
+          link: ""
         },
         {
           title: "Treasure Hunter",
           desc:
             "This is a final project for Object-Oriented Programming Courses.",
           tech: "Java, Swing GUI",
-          repo: "https://github.com/rockavoldy/Pencarian-Harta-Karun"
+          repo: "https://github.com/rockavoldy/Pencarian-Harta-Karun",
+          link: ""
         }
       ]
     };
