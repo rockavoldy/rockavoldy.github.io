@@ -21,11 +21,10 @@
 
 <script>
 // @ is an alias to /src
-import Socmed from "@/components/Socmed";
 export default {
   name: "App",
   components: {
-    Socmed,
+    Socmed: () => import("@/components/Socmed"),
   },
 };
 </script>

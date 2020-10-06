@@ -2,7 +2,7 @@
   <div class="portfolio">
     <h2 class="text-center text-2xl uppercase font-semibold">Portfolio</h2>
     <h5 class="text-center font-medium mb-2">
-      Here is list of my existing project
+      Here is lists of my existing and ongoing project
     </h5>
     <div
       class="container mx-auto w-full md:w-8/12 lg:w-7/12 xl:w-5/12 flex flex-col"
@@ -80,6 +80,31 @@
                     >
                   </span>
                 </li>
+
+                <li class="flex">
+                  <span>
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                      <path
+                        d="M21,3H3C2,3 1,4 1,5V19A2,2 0 0,0 3,21H21C22,21 23,20 23,19V5C23,4 22,3 21,3M5,17L8.5,12.5L11,15.5L14.5,11L19,17H5Z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="px-1">
+                    <a
+                      :class="
+                        item.slide !== ''
+                          ? 'border-b hover:text-blue-700 hover:border-gray-700 cursor-pointer'
+                          : ''
+                      "
+                      @click="openModal(item.slide)"
+                      >{{
+                        item.slide !== ""
+                          ? "Screenshot of the project"
+                          : "No screenshot available."
+                      }}</a
+                    >
+                  </span>
+                </li>
               </ul>
             </div>
             <hr class="mt-2 mb-4" />
@@ -87,16 +112,47 @@
         </div>
       </div>
     </div>
+    <ModalDemo
+      :show="modal.show"
+      @hide-modal="modal.show = $event"
+      :portid="modal.portid"
+    />
   </div>
 </template>
 
 <script>
 import { portfolio } from "@/assets/data/portfolio.json";
 export default {
+  components: {
+    ModalDemo: () => import("@/components/ModalDemo"),
+  },
   data() {
     return {
       portfolio: portfolio,
+      modal: {
+        portid: "",
+        show: false,
+      },
     };
+  },
+  watch: {
+    modal: {
+      deep: true,
+      handler() {
+        if (this.modal.show) {
+          document.querySelector("body").classList.add("overflow-hidden");
+        } else {
+          document.querySelector("body").classList.remove("overflow-hidden");
+          this.modal.portid = "";
+        }
+      },
+    },
+  },
+  methods: {
+    openModal(portid) {
+      this.modal.portid = portid;
+      this.modal.show = true;
+    },
   },
 };
 </script>

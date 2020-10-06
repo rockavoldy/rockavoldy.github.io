@@ -5,49 +5,56 @@
       "desc": "This apps build with a reason to help spliting bills when order food online with discount code.",
       "tech": "Vue, TailwindCSS, PWA",
       "repo": "https://github.com/rockavoldy/hitungpromo",
-      "link": "https://akhmad.id/hitungpromo"
+      "link": "https://akhmad.id/hitungpromo",
+      "slide": ""
     },
     {
       "title": "Decision Support System: Scholarship",
       "desc": "This apps is final project for Introduction to the Decision Support System courses.",
       "tech": "Vue, Codeigniter 3, Profile Matching Methode",
       "repo": "https://github.com/rockavoldy/Profile-Matching-SPK",
-      "link": ""
+      "link": "",
+      "slide": "dss-scholarship"
     },
     {
       "title": "KKN Schedule",
       "desc": "This apps is to track KKN Schedule and documentation per day to make it easy when make report with documentation after KKN end.",
       "tech": "Vue, Lumen 5.8, PHPOffice",
       "repo": "https://github.com/rockavoldy/Jadwal-KKN",
-      "link": ""
+      "link": "",
+      "slide": "kkn-schedule"
     },
     {
       "title": "MSCEIS 2019",
       "desc": "This Static website build for promotion of MSCEIS 2019 event.",
       "tech": "Vue, Vuetify",
       "repo": "https://github.com/rockavoldy/msceis",
-      "link": "https://akhmad.id/msceis"
+      "link": "https://akhmad.id/msceis",
+      "slide": ""
     },
     {
       "title": "Hue Controller",
       "desc": "This app is to control WS2812B (Neopixel) connected to Wemos D1 Mini using Wireless.",
       "tech": "Vue, MQTT, Websocket, ESP8266, Arduino, Neopixel",
       "repo": "https://github.com/rockavoldy/Hue-Controller",
-      "link": "https://hue.akhmad.id"
+      "link": "https://hue.akhmad.id",
+      "slide": ""
     },
     {
       "title": "Line bot Torrent downloader",
       "desc": "This script is to get magnet text from LINE and will be forwarded to Torrent server using Transmission RPC.",
       "tech": "PHP, LINE Messaging API, Transmission RPC",
       "repo": "https://github.com/rockavoldy/LINEBotTorrentServer",
-      "link": ""
+      "link": "",
+      "slide": ""
     },
     {
       "title": "Treasure Hunter",
       "desc": "This is a final project for Object-Oriented Programming Courses.",
       "tech": "Java, Swing GUI",
       "repo": "https://github.com/rockavoldy/Pencarian-Harta-Karun",
-      "link": ""
+      "link": "",
+      "slide": "treasure-hunter"
     }
   ]
 }
