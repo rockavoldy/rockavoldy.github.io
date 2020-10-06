@@ -1,8 +1,12 @@
 <template>
   <div class="portfolio">
     <h2 class="text-center text-2xl uppercase font-semibold">Portfolio</h2>
-    <h5 class="text-center font-medium mb-2">Here is list of my existing project</h5>
-    <div class="container mx-auto w-full md:w-8/12 lg:w-7/12 xl:w-5/12 flex flex-col">
+    <h5 class="text-center font-medium mb-2">
+      Here is list of my existing project
+    </h5>
+    <div
+      class="container mx-auto w-full md:w-8/12 lg:w-7/12 xl:w-5/12 flex flex-col"
+    >
       <div class="px-3 md:px-2 mx-auto justify-center flex flex-col">
         <div class="w-auto flex flex-col">
           <div class="mb-2" v-for="(item, index) in portfolio" :key="index">
@@ -39,10 +43,17 @@
                   </span>
                   <span class="px-1">
                     <a
-                      :class="item.repo !== '' ? 'hover:text-blue-700 border-b hover:border-gray-700' : ''"
+                      :class="
+                        item.repo !== ''
+                          ? 'hover:text-blue-700 border-b hover:border-gray-700'
+                          : ''
+                      "
                       :href="item.repo !== '' ? item.repo : false"
                       target="_blank"
-                    >{{ item.repo !== '' ? 'View on GitHub' : 'Private project.' }}</a>
+                      >{{
+                        item.repo !== "" ? "View on GitHub" : "Private project."
+                      }}</a
+                    >
                   </span>
                 </li>
 
@@ -56,10 +67,17 @@
                   </span>
                   <span class="px-1">
                     <a
-                      :class="item.link !== '' ? 'border-b hover:text-blue-700 hover:border-gray-700' : ''"
+                      :class="
+                        item.link !== ''
+                          ? 'border-b hover:text-blue-700 hover:border-gray-700'
+                          : ''
+                      "
                       :href="item.link !== '' ? item.link : false"
                       target="_blank"
-                    >{{ item.link !== "" ? item.link : "No demo available."}}</a>
+                      >{{
+                        item.link !== "" ? item.link : "No demo available."
+                      }}</a
+                    >
                   </span>
                 </li>
               </ul>
@@ -73,68 +91,13 @@
 </template>
 
 <script>
+import { portfolio } from "@/assets/data/portfolio.json";
 export default {
   data() {
     return {
-      portfolio: [
-        {
-          title: "Hitung Promo",
-          desc:
-            "This apps build with a reason to help spliting bills when order food online with discount code.",
-          tech: "Vue, TailwindCSS, PWA",
-          repo: "https://github.com/rockavoldy/hitungpromo",
-          link: "https://akhmad.id/hitungpromo"
-        },
-        {
-          title: "Decision Support System: Scholarship",
-          desc:
-            "This apps is final project for Introduction to the Decision Support System courses.",
-          tech: "Vue, Codeigniter 3, Profile Matching Methode",
-          repo: "https://github.com/rockavoldy/Profile-Matching-SPK",
-          link: ""
-        },
-        {
-          title: "KKN Schedule",
-          desc:
-            "This apps is to track KKN Schedule and documentation per day to make it easy when make report with documentation after KKN end.",
-          tech: "Vue, Lumen 5.8, PHPOffice",
-          repo: "https://github.com/rockavoldy/Jadwal-KKN",
-          link: ""
-        },
-        {
-          title: "MSCEIS 2019",
-          desc: "This Static website build for promotion of MSCEIS 2019 event.",
-          tech: "Vue, Vuetify",
-          repo: "https://github.com/rockavoldy/msceis",
-          link: "https://akhmad.id/msceis"
-        },
-        {
-          title: "Hue Controller",
-          desc:
-            "This app is to control WS2812B (Neopixel) connected to Wemos D1 Mini using Wireless.",
-          tech: "Vue, MQTT, Websocket, ESP8266, Arduino, Neopixel",
-          repo: "https://github.com/rockavoldy/Hue-Controller",
-          link: "https://hue.akhmad.id"
-        },
-        {
-          title: "Line bot Torrent downloader",
-          desc:
-            "This script is to get magnet text from LINE and will be forwarded to Torrent server using Transmission RPC.",
-          tech: "PHP, LINE Messaging API, Transmission RPC",
-          repo: "https://github.com/rockavoldy/LINEBotTorrentServer",
-          link: ""
-        },
-        {
-          title: "Treasure Hunter",
-          desc:
-            "This is a final project for Object-Oriented Programming Courses.",
-          tech: "Java, Swing GUI",
-          repo: "https://github.com/rockavoldy/Pencarian-Harta-Karun",
-          link: ""
-        }
-      ]
+      portfolio: portfolio,
     };
-  }
+  },
 };
 </script>
 
