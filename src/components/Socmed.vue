@@ -2,13 +2,33 @@
   <div class="w-full">
     <ul class="flex flex-row justify-around text-center">
       <li>
-        <a class="socmed__link" target="_blank" href="https://twitter.com/rockavoldy">Twitter</a>
+        <a
+          class="socmed__link"
+          target="_blank"
+          href="https://github.com/rockavoldy"
+          >GitHub</a
+        >
       </li>
       <li>
-        <a class="socmed__link" target="_blank" href="https://github.com/rockavoldy">GitHub</a>
+        <a
+          class="socmed__link"
+          target="_blank"
+          href="https://twitter.com/rockavoldy"
+          >Twitter</a
+        >
       </li>
       <li>
-        <a class="socmed__link" target="_blank" href="https://facebook.com/rockavoldy">Facebook</a>
+        <a class="socmed__link" target="_blank" href="https://fb.me/rockavoldy"
+          >Facebook</a
+        >
+      </li>
+      <li>
+        <a
+          class="socmed__link"
+          target="_blank"
+          href="https://www.linkedin.com/in/akhmad98"
+          >LinkedIn</a
+        >
       </li>
     </ul>
   </div>
