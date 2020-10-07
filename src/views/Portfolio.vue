@@ -57,7 +57,13 @@
                   </span>
                 </li>
 
-                <li class="flex">
+                <li
+                  class="flex"
+                  v-if="
+                    (item.link !== '' && item.slide === '') ||
+                    (item.link === '' && item.slide === '')
+                  "
+                >
                   <span>
                     <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                       <path
@@ -81,7 +87,7 @@
                   </span>
                 </li>
 
-                <li class="flex">
+                <li class="flex" v-if="item.link === '' && item.slide !== ''">
                   <span>
                     <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                       <path
