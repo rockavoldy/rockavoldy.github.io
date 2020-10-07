@@ -27,6 +27,13 @@ export default {
     show(val) {
       this.showModal = val;
     },
+    showModal(val) {
+      if (val) {
+        document.querySelector("body").classList.add("overflow-hidden");
+      } else {
+        document.querySelector("body").classList.remove("overflow-hidden");
+      }
+    },
   },
   props: {
     show: {

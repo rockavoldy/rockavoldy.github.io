@@ -137,15 +137,12 @@ export default {
   },
   watch: {
     modal: {
-      deep: true,
-      handler() {
-        if (this.modal.show) {
-          document.querySelector("body").classList.add("overflow-hidden");
-        } else {
-          document.querySelector("body").classList.remove("overflow-hidden");
+      handler(val) {
+        if (!val.show) {
           this.modal.portid = "";
         }
       },
+      deep: true,
     },
   },
   methods: {
