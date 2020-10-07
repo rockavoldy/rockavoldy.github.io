@@ -2,14 +2,17 @@
   "educations": [
     {
       "school": "Universitas Pendidikan Indonesia",
+      "major": "Computer Science Education",
       "date": "September 2016 - Present",
       "activities": [
-        "Assistant Practicum Pemrograman Internet Courses (January 2019 - June 2019)",
-        "Database lab Assistant (January 2018 - June 2018)"
+        "Lecturer assistant for Internet Programming subject (January 2019 - June 2019)",
+        "Lecturer assistant for Database subject (January 2018 - June 2018)",
+        "Assistant in Database laboratory (January 2018 - January 2019)"
       ]
     },
     {
       "school": "Vocational High School 2 Garut",
+      "major": "Multimedia",
       "date": "July 2013 - February 2016",
       "activities": []
     }
@@ -18,7 +21,7 @@
     {
       "title": "Finalist Hackathon PANDI 10",
       "date": "24 April 2019",
-      "list": [
+      "lists": [
         "This Hackathon organized by PANDI for 10th year celebration.",
         "This Hackatahon intended to use u.id on internet-based services."
       ]
@@ -27,11 +30,11 @@
   "skills": [
     {
       "title": "Intermediate",
-      "list": ["PHP", "Codeigniter 3", "JavaScript", "Vue", "Linux", "Git"]
+      "lists": ["PHP", "Codeigniter 3", "JavaScript", "Vue", "Linux", "Git"]
     },
     {
       "title": "Basic",
-      "list": ["Laravel", "Nuxt", "Nodejs"]
+      "lists": ["Laravel", "Nuxt", "Nodejs"]
     }
   ]
 }

@@ -7,15 +7,22 @@
       <div class="px-3 md:px-2 mx-auto justify-center flex flex-col">
         <div class="w-auto flex flex-col mb-1">
           <h3 class="font-bold text-xl uppercase mb-3">Education</h3>
-          <div class="mb-2" v-for="(item, index) in educations" :key="index">
-            <h4 class="uppercase font-semibold">{{ item.school }}</h4>
-            <span class="text-sm capitalize">{{ item.date }}</span>
+          <div
+            class="mb-2"
+            v-for="(education, indexEducation) in educations"
+            :key="indexEducation"
+          >
+            <h4 class="uppercase font-semibold">{{ education.school }}</h4>
+            <h6 class="capitalize font-medium text-sm">
+              {{ education.major }}
+            </h6>
+            <span class="text-sm capitalize">{{ education.date }}</span>
             <ul class="list-disc text-sm list-inside font-medium">
               <li
-                v-for="(itemact, indexact) in item.activities"
-                :key="indexact"
+                v-for="(activity, indexActivity) in education.activities"
+                :key="indexActivity"
               >
-                {{ itemact }}
+                {{ activity }}
               </li>
             </ul>
           </div>
@@ -24,12 +31,16 @@
 
         <div class="w-auto flex flex-col mb-1">
           <h3 class="font-bold text-xl uppercase mb-3">Award</h3>
-          <div class="mb-2" v-for="(item, index) in awards" :key="index">
-            <h4 class="uppercase font-semibold">{{ item.title }}</h4>
-            <span class="text-sm capitalize">{{ item.date }}</span>
+          <div
+            class="mb-2"
+            v-for="(award, indexAward) in awards"
+            :key="indexAward"
+          >
+            <h4 class="uppercase font-semibold">{{ award.title }}</h4>
+            <span class="text-sm capitalize">{{ award.date }}</span>
             <ul class="list-disc text-sm list-inside font-medium">
-              <li v-for="(itemlist, indexlist) in item.list" :key="indexlist">
-                {{ itemlist }}
+              <li v-for="(list, indexList) in award.lists" :key="indexList">
+                {{ list }}
               </li>
             </ul>
           </div>
@@ -38,19 +49,19 @@
 
         <div class="w-auto flex flex-col mb-1">
           <h3 class="font-bold text-xl uppercase mb-3">Skill</h3>
-          <div
-            class="mb-2 flex flex-col"
-            v-for="(item, index) in skills"
-            :key="index"
-          >
-            <h6 class="uppercase font-bold text-sm">{{ item.title }}</h6>
-            <ul
-              class="list-none text-sm list-inside"
-              v-for="(itemlist, indexlist) in item.list"
-              :key="indexlist"
+          <div class="flex w-full flex-wrap">
+            <div
+              class="mb-2 w-6/12"
+              v-for="(skill, indexSkill) in skills"
+              :key="indexSkill"
             >
-              <li>{{ itemlist }}</li>
-            </ul>
+              <h6 class="uppercase font-bold text-sm">{{ skill.title }}</h6>
+              <ul class="list-none text-sm list-inside">
+                <li v-for="(item, indexList) in skill.lists" :key="indexList">
+                  {{ item }}
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
