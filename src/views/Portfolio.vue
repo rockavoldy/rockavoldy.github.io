@@ -96,7 +96,7 @@
                           ? 'border-b hover:text-blue-700 hover:border-gray-700 cursor-pointer'
                           : ''
                       "
-                      @click="openModal(item.slide)"
+                      @click="item.slide !== '' ? openModal(item.slide) : null"
                       >{{
                         item.slide !== ""
                           ? "Screenshot of the project"
