@@ -2,7 +2,7 @@
   "portfolio": [
     {
       "title": "Hitung Promo",
-      "desc": "This apps build with a reason to help spliting bills when order food online with discount code.",
+      "desc": "This application was built with aim to split the bill when ordering food online with discount code.",
       "tech": "Vue, TailwindCSS, PWA",
       "repo": "https://github.com/rockavoldy/hitungpromo",
       "link": "https://akhmad.id/hitungpromo",
@@ -10,26 +10,34 @@
     },
     {
       "title": "Decision Support System: Scholarship",
-      "desc": "This apps is final project for Introduction to the Decision Support System courses.",
-      "tech": "Vue, Codeigniter 3, Profile Matching Methode",
+      "desc": "This application was built for our final project for Introduction to the Decision Support System subject. Using profile-matching method to calculate subject.",
+      "tech": "Vue, Codeigniter 3, Profile Matching Method",
       "repo": "https://github.com/rockavoldy/Profile-Matching-SPK",
       "link": "",
-      "slide": "dss-scholarship"
+      "slide": ""
     },
     {
       "title": "KKN Schedule",
-      "desc": "This apps is to track KKN Schedule and documentation per day to make it easy when make report with documentation after KKN end.",
+      "desc": "This application was built to track schedule and daily activities with documentation of the activities for our KKN (Kuliah Kerja Nyata). And can create document for activities report according to the required format.",
       "tech": "Vue, Lumen 5.8, PHPOffice",
       "repo": "https://github.com/rockavoldy/Jadwal-KKN",
       "link": "",
-      "slide": "kkn-schedule"
+      "slide": ""
     },
     {
       "title": "MSCEIS 2019",
-      "desc": "This Static website build for promotion of MSCEIS 2019 event.",
+      "desc": "This static website was built for promoting MSCEIS 2019 event. This is my first project while i'm learning Vue.",
       "tech": "Vue, Vuetify",
       "repo": "https://github.com/rockavoldy/msceis",
       "link": "https://akhmad.id/msceis",
+      "slide": ""
+    },
+    {
+      "title": "E-Classroom",
+      "desc": "This application was built to help lecturer give materials and tasks to students.",
+      "tech": "Laravel 5.8, Bootstrap 3",
+      "repo": "",
+      "link": "",
       "slide": ""
     },
     {
@@ -54,7 +62,7 @@
       "tech": "Java, Swing GUI",
       "repo": "https://github.com/rockavoldy/Pencarian-Harta-Karun",
       "link": "",
-      "slide": "treasure-hunter"
+      "slide": ""
     }
   ]
 }

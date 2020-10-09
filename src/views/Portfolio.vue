@@ -51,7 +51,9 @@
                       :href="item.repo !== '' ? item.repo : false"
                       target="_blank"
                       >{{
-                        item.repo !== "" ? "View on GitHub" : "Private project."
+                        item.repo !== ""
+                          ? "See the code on GitHub."
+                          : "Sorry, this is a private project."
                       }}</a
                     >
                   </span>
