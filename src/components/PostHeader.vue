@@ -54,7 +54,7 @@
 </template>
 
 <script>
-import moment from "moment";
+import dayjs from "dayjs";
 import Parallax from "vue-parallaxy";
 
 export default {
@@ -73,7 +73,7 @@ export default {
   },
   computed: {
     formattedPublishDate() {
-      return moment(this.post.datetime).format("DD MMMM, YYYY");
+      return dayjs(this.post.datetime).format("DD MMMM, YYYY");
     },
     speedFactor() {
       return this.post.fullscreen ? 0.21 : 0.37;

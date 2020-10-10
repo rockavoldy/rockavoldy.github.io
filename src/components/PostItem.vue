@@ -43,18 +43,18 @@
 </template>
 
 <script>
-import moment from "moment";
+import dayjs from "dayjs";
 
 export default {
   props: ["post"],
   computed: {
     formattedPublishDate() {
-      return moment(this.post.datetime).format("DD MMMM, YYYY");
+      return dayjs(this.post.datetime).format("DD MMMM, YYYY");
     }
   },
   methods: {
     formatPublishDate(date) {
-      return moment(date).format("DD MMMM, YYYY");
+      return dayjs(date).format("DD MMMM, YYYY");
     },
     excerpt(post, length, clamp) {
       if (post.excerpt) {

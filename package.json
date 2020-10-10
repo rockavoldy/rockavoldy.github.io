@@ -13,6 +13,7 @@
     "@gridsome/plugin-sitemap": "^0.2.3",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.4.0",
+    "dayjs": "^1.9.1",
     "gridsome": "^0.7.12",
     "gridsome-plugin-gtm": "^0.1.1",
     "gridsome-plugin-remark-shiki": "^0.3.1",
@@ -21,7 +22,6 @@
     "vue-parallaxy": "^1.1.1"
   },
   "devDependencies": {
-    "moment": "^2.24.0",
     "oniguruma": "^7.0.0",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.1",
