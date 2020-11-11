@@ -7,9 +7,9 @@
             Hello, I'm
             <span class="underline font-semibold">Ahmad</span> 😃
           </h1>
-          <h2 class="px-10 text-lg md:text-xl lg:text-2xl">
-            <span class="font-medium">Web Developer</span> based in
-            <span class="font-medium">Bandung, Indonesia</span>
+          <h2 class="px-10 text-lg md:text-xl lg:text-2xl font-normal">
+            A <span class="font-medium">student</span> whose passionate to
+            <span class="font-medium">invent something useful.</span>
           </h2>
         </div>
         <hr class="mt-10 mb-5" />

@@ -2,7 +2,7 @@
   <nav class="w-full flex justify-between p-4">
     <div class="nav__head">
       <router-link class="nav__link-head" to="/">
-        <h1>Ahmad</h1>
+        <h1>Akhmad</h1>
       </router-link>
     </div>
     <div id="nav">
