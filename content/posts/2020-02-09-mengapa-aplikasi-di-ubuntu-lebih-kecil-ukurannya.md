@@ -9,7 +9,7 @@ tags:
     - Package Manager
 cover: ""
 fullscreen: false
-published: true
+draft: false
 ---
 
 Kalian yang baru migrasi dari Windows atau macOS ke Linux khususnya ubuntu bertanya-tanya "Kenapa aplikasi di ubuntu lebih kecil ukurannya daripada yang ada di Windows atau macOS?". Saya akan mencoba menjawab pertanyaan ini dari pengalaman Saya sendiri dan juga rangkuman dari tulisan yang ada di internet.
