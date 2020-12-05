@@ -3,11 +3,6 @@ title: "Disable CFG Lock pada Acer E5-476G"
 slug:
 description: "Disable CFG Lock pada Acer E5-476G. Dokumentasi ini juga bisa digunakan untuk mengubah setting BIOS yang tersembunyi atau disembunyikan oleh vendor laptop."
 date: 2020-10-10 11:41:17
-author: akhmad
-tags:
-    - Hackintosh
-    - BIOS
-    - Linux
 cover:
 fullscreen: false
 draft: false
@@ -23,7 +18,7 @@ Langkah-langkahnya:
 
 2. Extract file zipnya, dan extract lagi file .exe nya sehingga akan muncul seperti ini (OS yang dipakai sendiri tidak terbatas hanya di macOS, di linux dan Windows juga sama)
 
-![file exe dari BIOS yang telah diextract](/images/disable-cfg-lock/2bios.png)
+{{< img src="img/2bios.png" alt="file exe dari BIOS yang telah diextract" >}}
 
 3. Setelah diextract, akan banyak file seperti gambar di atas, tetapi fokus pada file yang extensinya (.bin, .fd, .rom, atau bisa dalam extensi lain yang tidak biasa di windows) pada BIOS untuk laptop saya, tedapat 5 file .fd, sesuaikan dengan board dari laptopnya (harus dibongkar, untuk laptop saya sendiri menggunakan Z8VR)
 
