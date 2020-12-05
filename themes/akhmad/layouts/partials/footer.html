@@ -1,0 +1,22 @@
+<footer class="text-gray-700 text-xs leading-normal flex flex-wrap justify-between mx-auto max-w-2xl px-4">
+    <div class="w-full my-4">
+        <p>
+            Build with &hearts; in
+            <strong>Bandung</strong>
+        </p>
+    </div>
+    <div class="w-full sm:w-1/2">
+        <nav>
+            <ul class="flex sm:justify-end -mx-2">
+                {{ range .Site.Menus.footer }}
+                <li class="px-2">
+                    <a href="{{ .URL }}" class="border-b border-transparent hover:border-gray-400 transition-border-color">
+                        {{ $text := print .Name | safeHTML }}
+                        {{ $text }}
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
+        </nav>
+    </div>
+</footer>
