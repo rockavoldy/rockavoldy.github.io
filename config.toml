@@ -2,3 +2,6 @@ baseURL = "https://blog.akhmad.id/"
 languageCode = "id-id"
 title = "Blog Akhmad"
 theme = "Akhmad"
+
+[params]
+    description = "Cerita, Catatan, dan tulisan untuk mendokumentasikan sesuatu."

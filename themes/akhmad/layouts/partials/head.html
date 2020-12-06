@@ -1,9 +1,18 @@
 <head>
+    <!-- Meta tag -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{end }}{{ end }} ">
+
+    <link rel="canonical" href="{{ .Permalink }}" />
+
+    <!-- Header -->
     {{ $title := print .Site.Title " | " .Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
 
     <link rel="stylesheet" type="text/css" href="/css/tailwind.css">
+    <link rel="stylesheet" type="text/css" href="/css/markdown.css">
+    <link rel="stylesheet" type="text/css" href="/css/syntax.css">
 </head>
