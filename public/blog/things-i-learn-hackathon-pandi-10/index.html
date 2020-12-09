@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html><head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Hackathon Pandi 10 Lomba hackathon dari Pandi ini adalah lomba tentang membuat ide aplikasi atau solusi dengan menggunakan U.id dimana Pandi membuat layanan Single Sign-On (SSO) dengan menggunakan NIK pada E-KTP. Jadi tujuannya adalah untuk membuat layanan SSO dengan fokus pada keamanan data warga negara. Untuk kedepannya mungkin akan dikembangkan lebih lanjut lagi, akan sangat berguna untuk auth yang berhubungan dengan data kewarganegaraan seperti sensus penduduk, Daftar NPWP, Pajak, Buka rekening bank, dan lainnya. ">
+
+    <link rel="canonical" href="https://akhmad.id/blog/blog/things-i-learn-hackathon-pandi-10/" />
+
+    
+    
+    
+    <title>Something I Learn: Hackathon Pandi 10 | Blog Akhmad</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/tailwind.css">
+    <link rel="stylesheet" type="text/css" href="/css/markdown.css">
+    <link rel="stylesheet" type="text/css" href="/css/syntax.css">
+</head><body><nav id="nav__container" class="mx-auto w-100 px-4 md:px-6 py-2 md:py-3 bg-white flex flex-wrap items-center justify-between shadow-md">
+    
+    <div class="text-gray-800 mr-6">
+        <div class="flex flex-col">
+            <a href="https://akhmad.id/blog/" class="font-semibold text-xl hover:text-gray-700">Akhmad</a>
+            <span class="text-xs sm:text-sm">Stories, Build logs, Ideas</span>
+        </div>
+    </div>
+
+    
+    <div class="block lg:hidden">
+        <button class="flex items-center p-2 rounded-sm bg-gray-100 hover:bg-gray-300">
+            <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+        </button>
+    </div>
+
+    
+
+    <div class="hidden  w-full flex-grow lg:flex lg:items-center lg:w-auto text-gray-800 font-medium uppercase">
+        
+    </div>
+
+    
+
+    <div class="hidden lg:flex flex-row text-gray-800">
+        <div class="mx-1">
+            <a href="https://github.com/rockavoldy" target="_blank">
+                <svg class="hover:text-gray-600 fill-current h-6 w-6" viewBox="0 0 24 24">
+                    <path
+                        d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+                </svg>
+            </a>
+        </div>
+        <div class="mx-1">
+            <a href="https://twitter.com/rockavoldy"  target="_blank">
+                <svg class="hover:text-gray-600 fill-current h-6 w-6" viewBox="0 0 24 24">
+                    <path
+                        d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+</nav><div id="content">
+<main>
+    <header>
+    
+    <div class="mt-6 md:mt-14 lg:mt-20">
+        <div class="max-w-xl md:max-w-3xl xl:max-w-4xl mx-auto text-center px-6">
+            <h1 class="text-3xl sm:text-5xl leading-tight font-sans font-bold mb-2 text-gray-800">Something I Learn: Hackathon Pandi 10</h1>
+            <p class="text-gray-700">
+                
+
+<time datetime="2020-02-29" class="text-gray-700 text-xs mb-2 uppercase">Saturday, 29 February 2020</time>
+            </p>
+        </div>
+    </div>
+    
+</header>
+    <article class="max-w-xl md:max-w-2xl xl:max-w-3xl mx-auto px-6 sm:px-12 pt-12">
+        <div class="markdown">
+            <h3 id="hackathon-pandi-10">Hackathon Pandi 10</h3>
+<p>Lomba hackathon dari Pandi ini adalah lomba tentang membuat ide aplikasi atau solusi dengan menggunakan <a href="https://u.id/">U.id</a> dimana Pandi membuat layanan Single Sign-On (SSO) dengan menggunakan NIK pada E-KTP. Jadi tujuannya adalah untuk membuat layanan SSO dengan fokus pada keamanan data warga negara.
+Untuk kedepannya mungkin akan dikembangkan lebih lanjut lagi, akan sangat berguna untuk <em>auth</em> yang berhubungan dengan data kewarganegaraan seperti sensus penduduk, Daftar NPWP, Pajak, Buka rekening bank, dan lainnya.</p>
+<hr>
+<p>Lomba Hackathon ini sudah hampir setahun yang lalu, diadakan sekitar akhir bulan April 2019. Kami, Saya bersama 2 orang teman saya membuat solusi tentang penggunaan SSO <a href="https://u.id">U.id</a> ini untuk kepentingan pemberian beasiswa yang tepat sasaran. Jadi solusi dari kelompok kita adalah membuat platform yang bisa digunakan untuk Pemberi dan Penerima beasiswa saling terhubung. Pemberi beasiswa bisa dengan mudah sortir calon penerima, dan penerima beasiswa juga tidak perlu perlu repot menulis, <em>print</em>, dan mengirim ulang semuanya untuk diajukan. SSO <a href="https://u.id">U.id</a> kita gunakan juga untuk validasi <em>history</em> penerima beasiswa itu seperti apa. Jadi pemberi beasiswa bisa melihat bagaimana beasiswa yang didapatkan penerima tersebut digunakan, apa bermanfaat dan tepat sasaran atau malah tidak tepat sasaran.</p>
+<p>Oke, itu saja pengantarnya. Waktu itu kita bertiga hanya iseng, bahkan proposal yang dibuat hanya dalam waktu 2 hari sebelum penutupan karena sebelumnya sibuk dengan tugas kuliah. Sampai akhirnya saya ditelpon dan diundang untuk menjadi finalis, jelas kaget, deg-deg-an dan seneng campur aduk. Dari awal kita tidak ada niat untuk mengejar juara 1 atau jadi finalis, niat kita hanya &ldquo;refreshing&rdquo; dari tugas kuliah yang numpuk (hahaha.., konyol memang). Sampai akhirnya kita berangkat ke Jakarta, kita menyiapkan untuk presentasi (Saya mengira awalnya Hackathon ini akan menjadi &ldquo;Hackathon&rdquo; yang kita merealisasikan ide yang sudah kita buat ditempat dalam waktu cepat. Tapi ternyata bukan, kita disini membuat ide dan dipresentasikan kepada juri, seperti lomba ide jadi).</p>
+<p>Skip sampai hari presentasi, saya merasa minder ketika melihat presentasi dari kelompok lain. Ide, pemaparan dan <em>mockup</em> lebih matang daripada kita. Saya juga memperburuk keadaan, karena ketidak-biasaan saya presentasi didepan, saya gugup dan banyak hal penting mengenai alur, dan solusi yang harusnya menjadi fokus kita untuk ide itu malah tidak muncul. Akhirnya pertanyaan dari juri hanya sedikit dibandingkan kelompok lain, dan juri sepertinya tidak tertarik dengan solusi dari kita karena memang masih terlalu mentah.</p>
+<p>Lomba ini adalah lomba pertama yang saya ikuti dan berhasil masuk menjadi finalis. Sebelumnya hanya menjadi tim hore untuk banyak lomba yang telah saya coba, tentunya dengan berbeda-beda anggota kelompok. Saya belajar banyak hal ketika mengikuti lomba ini. Diantaranya:</p>
+<ul>
+<li>Jangan setengah-setengah dengan membuat ide baru.</li>
+<li>Pemaparan lebih baik dibuat umum, salah saya pemaparannya terlalu teknis sehingga lebih seperti &ldquo;show-off&rdquo; daripada memaparkan ide aslinya.</li>
+<li>Persiapkan dengan matang, karena &ldquo;the power of kepepet&rdquo; sangat enggak bagus. Bisa beres tetapi tidak akan matang, hanya beres saja.</li>
+<li>Latihan presentasi lagi. Atau jika masih susah, lebih baik biarkan orang yang bisa berbicara yang memaparkan.</li>
+</ul>
+<p>Banyak hal yang saya dapatkan dari hasil pemaparan kelompok lain. pengetahuan, cara memaparkan ide, bahkan solusi juga tidak perlu yang besar, solusi kecil yang tidak sempat orang lain pikirkan bisa bermanfaat untuk orang banyak.</p>
+<p>Saya sangat berterima kasih untuk Pandi, para juri dan kelompok lain, selain saya bisa &ldquo;refreshing&rdquo; dari tugas kuliah, ilmu baru, pengetahuan baru, saya juga bertemu banyak orang lain yang bisa saya pelajari dari mereka.</p>
+
+        </div>
+    </article>
+</main>
+<br><br>
+
+        </div><footer class="text-gray-700 text-xs leading-normal flex flex-wrap justify-between mx-auto max-w-2xl px-4">
+    <div class="w-full my-4">
+        <p>
+            Build with &hearts; in
+            <strong>Bandung</strong>
+        </p>
+    </div>
+    <div class="w-full sm:w-1/2">
+        <nav>
+            <ul class="flex sm:justify-end -mx-2">
+                
+            </ul>
+        </nav>
+    </div>
+</footer></body>
+</html>

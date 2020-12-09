@@ -1,7 +1,7 @@
-baseURL = "https://blog.akhmad.id/"
+baseURL = "https://akhmad.id/blog/"
 languageCode = "id-id"
 title = "Blog Akhmad"
-theme = "Akhmad"
+theme = "akhmad"
 
 [params]
     description = "Cerita, Catatan, dan tulisan untuk mendokumentasikan sesuatu."

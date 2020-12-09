@@ -3,10 +3,6 @@ title: "Something I Learn: Hackathon Pandi 10"
 slug:
 description: ""
 date: 2020-02-29 22:23:49
-author: akhmad
-tags:
-    - Something I Learn
-    - Lomba
 cover:
 fullscreen: false
 draft: false
