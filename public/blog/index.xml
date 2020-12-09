@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Blog Akhmad</title>
+    <link>https://akhmad.id/blog/blog/</link>
+    <description>Recent content in Blogs on Blog Akhmad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id-id</language>
+    <lastBuildDate>Sat, 10 Oct 2020 11:41:17 +0000</lastBuildDate><atom:link href="https://akhmad.id/blog/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Disable CFG Lock pada Acer E5-476G</title>
+      <link>https://akhmad.id/blog/blog/disable-cfg-lock-pada-acer-e5-476g/</link>
+      <pubDate>Sat, 10 Oct 2020 11:41:17 +0000</pubDate>
+      
+      <guid>https://akhmad.id/blog/blog/disable-cfg-lock-pada-acer-e5-476g/</guid>
+      <description>Saya sudah lama menggunakan Hackintosh, dari sekitar Tahun 2018 sampai saat ini masih memakainya. Alasan saya dengan Hackintosh ini karena menarik untuk dicoba, dimana saya harus mengenal laptop saya lebih dalam tidak hanya hardware, tetapi konfigurasi BIOSnya sendiri, dan bagaimana cara OS mengenali hardwarenya.
+Salah satu hal yang harus diubah itu mengenai CFG Lock. CFG Lock ini singkatnya mengunci MSR 0xE2 untuk tidak bisa di write. MSR 0xE2 berperan sebagai power management.</description>
+    </item>
+    
+    <item>
+      <title>Something I Learn: Hackathon Pandi 10</title>
+      <link>https://akhmad.id/blog/blog/things-i-learn-hackathon-pandi-10/</link>
+      <pubDate>Sat, 29 Feb 2020 22:23:49 +0000</pubDate>
+      
+      <guid>https://akhmad.id/blog/blog/things-i-learn-hackathon-pandi-10/</guid>
+      <description>Hackathon Pandi 10 Lomba hackathon dari Pandi ini adalah lomba tentang membuat ide aplikasi atau solusi dengan menggunakan U.id dimana Pandi membuat layanan Single Sign-On (SSO) dengan menggunakan NIK pada E-KTP. Jadi tujuannya adalah untuk membuat layanan SSO dengan fokus pada keamanan data warga negara. Untuk kedepannya mungkin akan dikembangkan lebih lanjut lagi, akan sangat berguna untuk auth yang berhubungan dengan data kewarganegaraan seperti sensus penduduk, Daftar NPWP, Pajak, Buka rekening bank, dan lainnya.</description>
+    </item>
+    
+    <item>
+      <title>Mengapa Aplikasi di Ubuntu lebih kecil ukurannya</title>
+      <link>https://akhmad.id/blog/blog/mengapa-aplikasi-di-ubuntu-lebih-kecil-ukurannya/</link>
+      <pubDate>Sun, 09 Feb 2020 04:51:41 +0000</pubDate>
+      
+      <guid>https://akhmad.id/blog/blog/mengapa-aplikasi-di-ubuntu-lebih-kecil-ukurannya/</guid>
+      <description>Kalian yang baru migrasi dari Windows atau macOS ke Linux khususnya ubuntu bertanya-tanya &amp;ldquo;Kenapa aplikasi di ubuntu lebih kecil ukurannya daripada yang ada di Windows atau macOS?&amp;rdquo;. Saya akan mencoba menjawab pertanyaan ini dari pengalaman Saya sendiri dan juga rangkuman dari tulisan yang ada di internet.
+Bisa dilihat ketika install aplikasi. Pada Windows biasanya dikemas dalam satu paket installer yang setelah dipasang langsung bisa digunakan meskipun pemasangan sedang tidak terkoneksi internet.</description>
+    </item>
+    
+  </channel>
+</rss>
