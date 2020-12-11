@@ -8,9 +8,6 @@
       {{ (.Resize "1200x").Permalink }} 2x'
       src='{{ (.Resize "600x").RelPermalink }}' alt="{{ $altText }}" />
   </a>
-  {{ if ($altText) }}
-  <figcaption><span>{{ $altText }}</span></figcaption>
-  {{ end }}
 </figure>
 {{ else }}
 <span>Could not find images</span>
