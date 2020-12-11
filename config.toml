@@ -4,6 +4,7 @@ defaultContentLanguage = "id"
 title = "Akhmad"
 theme = "akhmad"
 canonifyURLs = true
+relativeURLs = true
 
 [params]
     description = "Cerita, Catatan, dan tulisan untuk mendokumentasikan sesuatu."
