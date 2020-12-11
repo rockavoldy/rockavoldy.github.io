@@ -7,4 +7,4 @@ dist
 static/feed.xml
 .DS_Store
 public/
-resources/
+_gen/

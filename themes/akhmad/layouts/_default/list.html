@@ -5,11 +5,11 @@
         <div class="py-8 border-b border-gray-300">
             <header class="text-center mb-8">
                 {{ partial "metadata.html" . }}
-                <h2 class="text-2xl sm:text-3xl leading-tight font-sans mb-1 sm:mb-2">
-                    <a href="{{ .RelPermalink }}"
-                        class="border-b border-transparent hover:border-gray-700 transition-border-color text-black font-bold">
-                        {{ .Title }}</g-link>
-                </h2>
+                <a href="{{ .RelPermalink }}" class="border-b border-transparent hover:border-gray-700 transition-border-color text-black font-bold">
+                    <h2 class="text-2xl sm:text-3xl leading-tight font-sans mb-1 sm:mb-2">
+                        {{ .Title }}
+                    </h2>
+                </a>
             </header>
             <p class="leading-normal text-gray-700 font-normal px-2 sm:px-4 md:px-10 text-justify">
                 {{ .Summary }}
