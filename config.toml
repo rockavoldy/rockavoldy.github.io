@@ -1,6 +1,7 @@
 baseURL = "https://akhmad.id/blog/"
 languageCode = "id-id"
-title = "Blog Akhmad"
+defaultContentLanguage = "id"
+title = "Akhmad"
 theme = "akhmad"
 
 [params]
