@@ -5,7 +5,7 @@
     <img srcset='
       {{ (.Resize "320x").Permalink }} 320w,
       {{ (.Resize "600x").Permalink }} 600w,
-      {{ .RelPermalink }} 1200w'
+      {{ .Permalink }} 1200w'
       src='{{ (.Resize "600x").RelPermalink }}' alt="{{ $altText }}" />
   </a>
 </figure>
