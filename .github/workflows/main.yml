@@ -1,0 +1,20 @@
+name: Update blog posts
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/Checkout@v2
+      - name: Deploy to gh-pages
+        uses: benmatselby/hugo-deploy-gh-pages@master
+        env:
+          HUGO_VERSION: 0.79.0
+          TARGET_REPO: rockavoldy/blog
+          TARGET_BRANCH: gh-pages
+          TOKEN: ${{ secrets.TOKEN }}
+          HUGO_ARGS: '-t akhmad'
