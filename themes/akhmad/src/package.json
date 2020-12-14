@@ -4,5 +4,9 @@
     "postcss": "^8.1.10",
     "tailwindcss": "^2.0.1",
     "tailwindcss-cli": "^0.1.2"
+  },
+  "scripts": {
+    "prod": "NODE_ENV=production tailwindcss-cli build ./css/styles.css -o ../static/assets/css/tailwind.css",
+    "dev": "tailwindcss-cli build ./css/styles.css -o ../static/assets/css/tailwind.css"
   }
 }

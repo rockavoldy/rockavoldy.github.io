@@ -12,8 +12,8 @@
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
 
-    <link rel="stylesheet" type="text/css" href="/css/tailwind.css">
-    <link rel="stylesheet" type="text/css" href="/css/markdown.css">
-    <link rel="stylesheet" type="text/css" href="/css/syntax.css">
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}assets/css/tailwind.css">
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}assets/css/markdown.css">
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}assets/css/syntax.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700">
 </head>

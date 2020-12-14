@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oh crap, You found me!</title>
-    <link rel="stylesheet" type="text/css" href="/css/tailwind.css">
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}assets/css/tailwind.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700">
 </head>
 <body class="antialiased font-sans">
@@ -16,7 +16,7 @@
         </div>
         <div class="w-full flex justify-center align-middle">
             <div class="w-8/12">
-                <object data="/blog/svg/undraw_page_not_found.svg" class="w-full" type="image/svg+xml"></object>
+                <object data="{{ .Site.BaseURL }}assets/svg/undraw_page_not_found.svg" class="w-full" type="image/svg+xml"></object>
             </div>
         </div>
     </div>
