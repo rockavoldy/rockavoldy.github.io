@@ -1,6 +1,22 @@
 {
   "portfolio": [
     {
+      "title": "E-Learning Graphs",
+      "desc": "My responsibility here is fix some bug and add new features such as Interactive Graphs Theory using Canvas, and Drag-and-drop to make it more interactive.",
+      "tech": "Codeigniter 3, Bootstrap 4, jQuery, Graphs Theory, Interactjs",
+      "repo": "https://github.com/rockavoldy/elearning_graph",
+      "link": "",
+      "slide": ""
+    },
+    {
+      "title": "Relact",
+      "desc": "This application was built as learning media where user activity will recorded to help teacher knowing their students.",
+      "tech": "Codeigniter 3, Bootstrap 4, jQuery",
+      "repo": "https://github.com/abifitrird/relact",
+      "link": "",
+      "slide": ""
+    },
+    {
       "title": "Hitung Promo",
       "desc": "This application was built with aim to split the bill when ordering food online with discount code.",
       "tech": "Vue, TailwindCSS, PWA",
