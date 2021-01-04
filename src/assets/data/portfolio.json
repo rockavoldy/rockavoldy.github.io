@@ -10,7 +10,7 @@
     },
     {
       "title": "Decision Support System: Scholarship",
-      "desc": "This application was built for our final project for Introduction to the Decision Support System subject. Using profile-matching method to calculate subject.",
+      "desc": "This application was built for our final project on Introduction to the Decision Support System subject. Using profile-matching method to calculate subject.",
       "tech": "Vue, Codeigniter 3, Profile Matching Method",
       "repo": "https://github.com/rockavoldy/Profile-Matching-SPK",
       "link": "",
@@ -36,6 +36,14 @@
       "title": "E-Classroom",
       "desc": "This application was built to help lecturer give materials and tasks to students.",
       "tech": "Laravel 5.8, Bootstrap 3",
+      "repo": "",
+      "link": "",
+      "slide": ""
+    },
+    {
+      "title": "Moonsa",
+      "desc": "This application was built as learning material on computational thinking.",
+      "tech": "Lumen 5.8, Nuxtjs, Vuetify",
       "repo": "",
       "link": "",
       "slide": ""
