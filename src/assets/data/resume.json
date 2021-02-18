@@ -5,9 +5,9 @@
       "major": "Computer Science Education",
       "date": "September 2016 - Present",
       "activities": [
-        "Lecturer assistant for Internet Programming subject (January 2019 - June 2019)",
-        "Lecturer assistant for Database subject (January 2018 - June 2018)",
-        "Assistant in Database laboratory (January 2018 - January 2019)"
+        "Lecturer assistant for Internet Programming subject (January - June 2019)",
+        "Lecturer assistant for Database subject (2018 - 2019)",
+        "Assistant in Database laboratory (2018 - 2019)"
       ]
     },
     {
@@ -19,22 +19,22 @@
   ],
   "awards": [
     {
-      "title": "Finalist Hackathon PANDI 10",
+      "title": "4th Runner-up in Hackathon Competition",
       "date": "24 April 2019",
       "lists": [
         "This Hackathon organized by PANDI for 10th year celebration.",
-        "This Hackatahon intended to use u.id on internet-based services."
+        "This Hackathon intended to use u.id SSO on internet-based services."
       ]
     }
   ],
   "skills": [
     {
       "title": "Intermediate",
-      "lists": ["PHP", "Codeigniter 3", "JavaScript", "Vue", "Linux", "Git"]
+      "lists": ["PHP", "JavaScript", "Codeigniter 3", "Vue 2", "MySQL", "Git", "Linux"]
     },
     {
       "title": "Basic",
-      "lists": ["Laravel", "Nuxt", "Nodejs"]
+      "lists": ["Golang", "Laravel", "Nuxt", "Nodejs", "Docker", "MongoDB"]
     }
   ]
 }

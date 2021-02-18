@@ -2,7 +2,7 @@
   "portfolio": [
     {
       "title": "E-Learning Graphs",
-      "desc": "My responsibility here is fix some bug and add new features such as Interactive Graphs Theory using Canvas, and Drag-and-drop to make it more interactive.",
+      "desc": "My responsibility here is to fix some bug and add new features such as Interactive Graphs Theory using Canvas, and Drag-and-drop to make it more interactive.",
       "tech": "Codeigniter 3, Bootstrap 4, jQuery, Graphs Theory, Interactjs",
       "repo": "https://github.com/rockavoldy/elearning_graph",
       "link": "",
@@ -10,7 +10,7 @@
     },
     {
       "title": "Relact",
-      "desc": "This application was built as learning media where user activity will recorded to help teacher knowing their students.",
+      "desc": "This application was built to use as a learning medium where user activities will be recorded to help teacher know their students more and can make learning more enjoyable.",
       "tech": "Codeigniter 3, Bootstrap 4, jQuery",
       "repo": "https://github.com/abifitrird/relact",
       "link": "",
@@ -18,7 +18,7 @@
     },
     {
       "title": "Hitung Promo",
-      "desc": "This application was built with aim to split the bill when ordering food online with discount code.",
+      "desc": "This application was created to make it easier when sharing payments when ordering foods with other persons.",
       "tech": "Vue, TailwindCSS, PWA",
       "repo": "https://github.com/rockavoldy/hitungpromo",
       "link": "https://akhmad.id/hitungpromo",
@@ -26,8 +26,8 @@
     },
     {
       "title": "Decision Support System: Scholarship",
-      "desc": "This application was built for our final project on Introduction to the Decision Support System subject. Using profile-matching method to calculate subject.",
-      "tech": "Vue, Codeigniter 3, Profile Matching Method",
+      "desc": "This application was made for our final project on Introduction to the Decision Support System course. Using profile-matching method to calculate subject.",
+      "tech": "Vue, Codeigniter 3, Profile Matching",
       "repo": "https://github.com/rockavoldy/Profile-Matching-SPK",
       "link": "",
       "slide": ""
@@ -35,30 +35,30 @@
     {
       "title": "KKN Schedule",
       "desc": "This application was built to track schedule and daily activities with documentation of the activities for our KKN (Kuliah Kerja Nyata). And can create document for activities report according to the required format.",
-      "tech": "Vue, Lumen 5.8, PHPOffice",
+      "tech": "Vue, Lumen 5.8, PHPOffice/PHPWord",
       "repo": "https://github.com/rockavoldy/Jadwal-KKN",
       "link": "",
       "slide": ""
     },
     {
       "title": "MSCEIS 2019",
-      "desc": "This static website was built for promoting MSCEIS 2019 event. This is my first project while i'm learning Vue.",
+      "desc": "This static website was built for promoting MSCEIS 2019 event. This is my first project when i'm learning Vue.",
       "tech": "Vue, Vuetify",
       "repo": "https://github.com/rockavoldy/msceis",
-      "link": "https://akhmad.id/msceis",
+      "link": "https://akhmad.id/msceis (mirror)",
       "slide": ""
     },
     {
       "title": "E-Classroom",
       "desc": "This application was built to help lecturer give materials and tasks to students.",
-      "tech": "Laravel 5.8, Bootstrap 3",
+      "tech": "Laravel 5.8, Educo theme from themeforest, Bootstrap 3",
       "repo": "",
       "link": "",
       "slide": ""
     },
     {
       "title": "Moonsa",
-      "desc": "This application was built as learning material on computational thinking.",
+      "desc": "This application was built as learning medium on computational thinking.",
       "tech": "Lumen 5.8, Nuxtjs, Vuetify",
       "repo": "",
       "link": "",
@@ -81,8 +81,8 @@
       "slide": ""
     },
     {
-      "title": "Treasure Hunter",
-      "desc": "This is a final project for Object-Oriented Programming Courses.",
+      "title": "Treasure Hunter The Game",
+      "desc": "This is my final project for Object-Oriented Programming Course.",
       "tech": "Java, Swing GUI",
       "repo": "https://github.com/rockavoldy/Pencarian-Harta-Karun",
       "link": "",
