@@ -8,3 +8,4 @@ static/feed.xml
 .DS_Store
 public/
 _gen/
+.idea/
