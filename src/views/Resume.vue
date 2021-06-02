@@ -17,6 +17,9 @@
               {{ education.major }}
             </h6>
             <span class="text-sm capitalize">{{ education.date }}</span>
+            <br />
+            <p v-if="education.description.length > 0" class="text-sm font-medium">&nbsp;&nbsp;&nbsp;&nbsp;{{ education.description }}</p>
+            <span v-if="education.activities.length > 0" class="text-sm font-bold">Activities:</span>
             <ul class="list-disc text-sm list-inside font-medium">
               <li
                 v-for="(activity, indexActivity) in education.activities"
