@@ -21,7 +21,7 @@
       "desc": "This application was created to make it easier when sharing payments when ordering foods with other persons.",
       "tech": "Vue, TailwindCSS, PWA",
       "repo": "https://github.com/rockavoldy/hitungpromo",
-      "link": "https://akhmad.id/hitungpromo",
+      "link": "https://rockavoldy.github.io/hitungpromo",
       "slide": ""
     },
     {
@@ -45,7 +45,7 @@
       "desc": "This static website was built for promoting MSCEIS 2019 event. This is my first project when i'm learning Vue.",
       "tech": "Vue, Vuetify",
       "repo": "https://github.com/rockavoldy/msceis",
-      "link": "https://akhmad.id/msceis (mirror)",
+      "link": "https://rockavoldy.github.io/msceis",
       "slide": ""
     },
     {
@@ -69,7 +69,7 @@
       "desc": "This app is to control WS2812B (Neopixel) connected to Wemos D1 Mini using Wireless.",
       "tech": "Vue, MQTT, Websocket, ESP8266, Arduino, Neopixel",
       "repo": "https://github.com/rockavoldy/Hue-Controller",
-      "link": "https://hue.akhmad.id",
+      "link": "https://rockavoldy.github.io/Hue-Controller",
       "slide": ""
     },
     {

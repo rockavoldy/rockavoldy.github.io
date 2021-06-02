@@ -8,8 +8,8 @@
             <span class="underline font-semibold">Ahmad</span> 😃
           </h1>
           <h2 class="px-10 text-lg md:text-xl lg:text-2xl font-normal">
-            A <span class="font-medium">student</span> whose passionate to
-            <span class="font-medium">invent something useful.</span>
+            I am <span class="font-medium">Junior Software Engineer</span><br/> Based in 
+            <span class="font-medium">Bandung</span>, Indonesia
           </h2>
         </div>
         <hr class="mt-10 mb-5" />

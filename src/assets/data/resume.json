@@ -3,18 +3,20 @@
     {
       "school": "Universitas Pendidikan Indonesia",
       "major": "Computer Science Education",
-      "date": "September 2016 - Present",
+      "date": "September 2016 - 2021",
       "activities": [
         "Lecturer assistant for Internet Programming subject (January - June 2019)",
         "Lecturer assistant for Database subject (2018 - 2019)",
         "Assistant in Database laboratory (2018 - 2019)"
-      ]
+      ],
+      "description": "Completed 141 credits towards Bachelor's degree in Education"
     },
     {
       "school": "Vocational High School 2 Garut",
       "major": "Multimedia",
       "date": "July 2013 - February 2016",
-      "activities": []
+      "activities": [],
+      "description": ""
     }
   ],
   "awards": [
