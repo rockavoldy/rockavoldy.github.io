@@ -5,14 +5,14 @@ name = "Akhmad"
 license = "MIT"
 licenselink = "https://github.com/rockavoldy/blog/blob/master/LICENSE"
 description = ""
-homepage = "https://akhmad.id/blog"
+homepage = "https://akhmad.id/"
 tags = []
 features = []
 min_version = "0.41.0"
 
 [author]
   name = "Akhmad Maulana Akbar"
-  homepage = "https://akhmad.id/blog"
+  homepage = "https://akhmad.id/"
 
 # If porting an existing theme
 [original]
