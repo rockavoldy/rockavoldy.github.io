@@ -1,7 +1,7 @@
 /* Additional vertical padding used by kbd tag. */
 
 .markdown {
-  @apply text-gray-900 leading-normal break-words;
+  @apply text-slate-900 dark:text-slate-100 leading-normal break-words;
 }
 
 .markdown > * + * {
