@@ -8,6 +8,39 @@
         <div id="content">
         {{- block "main" . }}{{- end }}
         </div>
+        <script>
+            const svgDark = document.getElementById('btn_dark');
+            const svgLight = document.getElementById('btn_light');
+            const btnDarkMode = document.getElementById('dark_mode_toggle');
+
+            // Initial load
+            if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+                svgDark.classList.add('hidden');
+                svgLight.classList.remove('hidden');
+                localStorage.theme = 'dark';
+            } else {
+                document.documentElement.classList.remove('dark');
+                svgLight.classList.add('hidden');
+                svgDark.classList.remove('hidden');
+                localStorage.theme = 'light';
+            }
+
+            // onclick event
+            btnDarkMode.onclick = function() {
+                if (localStorage.theme === 'dark') {
+                    document.documentElement.classList.remove('dark');
+                    svgLight.classList.add('hidden');
+                    svgDark.classList.remove('hidden');
+                    localStorage.theme = 'light';
+                } else {
+                    document.documentElement.classList.add('dark');
+                    svgDark.classList.add('hidden');
+                    svgLight.classList.remove('hidden');
+                    localStorage.theme = 'dark';
+                }
+            }
+        </script>
         {{- partial "footer.html" . -}}
     </body>
 </html>

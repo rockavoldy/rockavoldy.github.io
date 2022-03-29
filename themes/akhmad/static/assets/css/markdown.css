@@ -7,11 +7,9 @@
   color: rgb(15 23 42 / var(--tw-text-opacity))
 }
 
-@media (prefers-color-scheme: dark) {
-  .markdown {
-    --tw-text-opacity: 1;
-    color: rgb(241 245 249 / var(--tw-text-opacity))
-  }
+.dark .markdown {
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity))
 }
 
 .markdown > * + * {
@@ -35,6 +33,11 @@
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity))
+}
+
+.dark .markdown a {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity))
 }
 
 .markdown strong a {
@@ -98,26 +101,38 @@
   font-weight: 600;
   line-height: 1.25;
   --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity))
+  color: rgb(71 85 105 / var(--tw-text-opacity))
+}
+
+.dark .markdown h6 {
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity))
 }
 
 .markdown blockquote {
   border-left-width: 4px;
   --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: 1rem;
   line-height: 1.5rem;
   --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity))
+  color: rgb(71 85 105 / var(--tw-text-opacity))
+}
+
+.dark .markdown blockquote {
+  --tw-border-opacity: 1;
+  border-color: rgb(71 85 105 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity))
 }
 
 .markdown code {
   display: inline;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
   padding-left: 0.25rem;
   padding-right: 0.25rem;
   padding-top: 0.125rem;
@@ -127,11 +142,21 @@
   line-height: 1.25rem
 }
 
+.dark .markdown code {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity))
+}
+
 .markdown pre {
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
   padding: 1rem
+}
+
+.dark .markdown pre {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity))
 }
 
 .markdown pre code {
@@ -202,4 +227,9 @@
 .markdown .highlight pre {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity)) !important
+}
+
+.dark .markdown .highlight pre {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity)) !important
 }
