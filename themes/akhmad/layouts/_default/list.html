@@ -2,16 +2,16 @@
 {{ range .Pages.ByPublishDate.Reverse }}
 <article class="mt-6">
     <div class="mx-auto max-w-2xl px-4">
-        <div class="py-8 border-b border-gray-300">
+        <div class="py-8 border-b border-gray-300 dark:border-slate-500">
             <header class="text-center mb-8">
                 {{ partial "metadata.html" . }}
-                <a href="{{ .RelPermalink }}" class="border-b border-transparent hover:border-gray-700 transition-border-color text-black font-bold">
-                    <h2 class="text-2xl sm:text-3xl leading-tight font-sans mb-1 sm:mb-2">
+                <a href="{{ .RelPermalink }}" class="text-slate-900 dark:text-slate-100 font-bold">
+                    <h2 class="text-2xl sm:text-3xl leading-tight font-sans mb-1 sm:mb-2 hover:text-slate-700 dark:hover:text-slate-300">
                         {{ .Title }}
                     </h2>
                 </a>
             </header>
-            <p class="leading-normal text-gray-700 font-normal px-2 sm:px-4 md:px-10 text-justify">
+            <p class="leading-normal text-gray-700 dark:text-slate-300 font-normal px-2 sm:px-4 md:px-10 text-justify">
                 {{ .Summary }}
             </p>
         </div>

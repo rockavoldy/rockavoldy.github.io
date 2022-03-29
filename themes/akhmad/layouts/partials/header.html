@@ -1,48 +1,41 @@
-<nav id="nav__container" class="mx-auto w-100 px-4 md:px-6 py-2 md:py-3 bg-white flex flex-wrap items-center justify-between shadow-md">
+<nav id="nav__container" class="mx-auto w-full px-4 md:px-6 py-2 md:py-3 flex flex-wrap items-center justify-between drop-shadow-xl bg-white dark:bg-slate-800">
     <!-- Left web identity -->
-    <div class="text-gray-800 mr-6">
+    <div class="text-slate-800 dark:text-white mr-6">
         <div class="flex flex-col">
-            <a href="{{ .Site.BaseURL }}" class="font-semibold text-xl hover:text-gray-700">Akhmad</a>
+            <a href="{{ .Site.BaseURL }}" class="font-semibold text-xl hover:text-slate-700 dark:hover:text-slate-300">Akhmad</a>
             <span class="text-xs sm:text-sm">Stories, Build logs, Ideas</span>
         </div>
     </div>
 
-    <!-- Burger menu button -->
-    <div class="block lg:hidden">
-        <button class="flex items-center p-2 rounded-sm bg-gray-100 hover:bg-gray-300">
-            <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <title>Menu</title>
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-        </button>
-    </div>
+    <!-- Below normal laptop screen (mobile device) -->
 
-    <!-- Internal nav -->
-
-    <div class="hidden  w-full flex-grow lg:flex lg:items-center lg:w-auto text-gray-800 font-medium uppercase">
-        {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}" class="hover:text-gray-700 mx-3 border-b border-transparent hover:border-gray-400"
-          >
-          {{ $text := print .Name | safeHTML }}
-          {{ $text }}
-        </a>
-        {{ end }}
-    </div>
-
-    <!-- Social media account -->
-
-    <div class="hidden lg:flex flex-row text-gray-800">
+    <!-- Above normal laptop screen (desktop device) -->
+    <div class="flex flex-row">
         <div class="mx-1">
+            <button id="dark_mode_toggle">
+                <svg class="text-slate-800 dark:text-white hover:text-slate-700 dark:hover:text-slate-300 fill-current h-6 w-6"
+                    id="btn_dark" viewBox="0 0 24 24">
+                    <path
+                        d="M14,2c1.82,0,3.53,0.5,5,1.35C16.01,5.08,14,8.3,14,12s2.01,6.92,5,8.65C17.53,21.5,15.82,22,14,22C8.48,22,4,17.52,4,12 S8.48,2,14,2z" />
+                </svg>
+                <svg class="text-slate-800 dark:text-white hover:text-slate-700 dark:hover:text-slate-300 fill-current h-6 w-6 hidden"
+                    id="btn_light" viewBox="0 0 24 24">
+                    <path
+                        d="M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0 c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2 c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1 C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06 c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41 l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41 c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36 c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z" />
+                </svg>
+            </button>
+        </div>
+        <div class="mx-1 hidden lg:block">
             <a href="https://github.com/rockavoldy" target="_blank" rel="noreferrer">
-                <svg class="hover:text-gray-600 fill-current h-6 w-6" viewBox="0 0 24 24">
+                <svg class="text-slate-800 dark:text-white hover:text-slate-700 dark:hover:text-slate-300 fill-current h-6 w-6" viewBox="0 0 24 24">
                     <path
                         d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
                 </svg>
             </a>
         </div>
-        <div class="mx-1">
+        <div class="mx-1 hidden lg:block">
             <a href="https://twitter.com/rockavoldy"  target="_blank" rel="noreferrer">
-                <svg class="hover:text-gray-600 fill-current h-6 w-6" viewBox="0 0 24 24">
+                <svg class="text-slate-800 dark:text-white hover:text-slate-700 dark:hover:text-slate-300 fill-current h-6 w-6" viewBox="0 0 24 24">
                     <path
                         d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
                 </svg>

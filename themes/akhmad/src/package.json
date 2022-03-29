@@ -1,7 +1,7 @@
 {
   "scripts": {
     "prod": "NODE_ENV=production tailwindcss -i ./css/styles.css -o ../static/assets/css/tailwind.css",
-    "dev": "tailwindcss -i ./css/styles.css -o ../static/assets/css/tailwind.css"
+    "dev": "tailwindcss -i ./css/styles.css -o ../static/assets/css/tailwind.css --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",

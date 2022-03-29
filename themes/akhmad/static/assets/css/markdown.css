@@ -1,176 +1,209 @@
 /* Additional vertical padding used by kbd tag. */
 
 .markdown {
+  overflow-wrap: break-word;
   line-height: 1.5;
   --tw-text-opacity: 1;
-  color: rgba(17, 24, 39, var(--tw-text-opacity));
-  overflow-wrap: break-word;
+  color: rgb(15 23 42 / var(--tw-text-opacity))
+}
+
+.dark .markdown {
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity))
 }
 
 .markdown > * + * {
   margin-top: 0px;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem
 }
 
 .markdown li + li {
-  margin-top: 0.25rem;
+  margin-top: 0.25rem
 }
 
 .markdown li > p + p {
-  margin-top: 1.5rem;
+  margin-top: 1.5rem
 }
 
 .markdown strong {
-  font-weight: 600;
+  font-weight: 600
 }
 
 .markdown a {
   font-weight: 600;
   --tw-text-opacity: 1;
-  color: rgba(37, 99, 235, var(--tw-text-opacity));
+  color: rgb(37 99 235 / var(--tw-text-opacity))
+}
+
+.dark .markdown a {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity))
 }
 
 .markdown strong a {
-  font-weight: 700;
+  font-weight: 700
 }
 
 .markdown h1 {
-  border-bottom-width: 1px;
-  font-weight: 600;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  line-height: 1.25;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
+  border-bottom-width: 1px;
   padding-bottom: 0.5rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  line-height: 1.25
 }
 
 .markdown h2 {
-  border-bottom-width: 1px;
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  line-height: 1.25;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
+  border-bottom-width: 1px;
   padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  line-height: 1.25
 }
 
 .markdown h3 {
-  font-weight: 600;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  line-height: 1.375;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  line-height: 1.375
 }
 
 .markdown h4 {
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  line-height: 1;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  line-height: 1
 }
 
 .markdown h5 {
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  line-height: 1.25;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25
 }
 
 .markdown h6 {
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  line-height: 1.25;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25;
   --tw-text-opacity: 1;
-  color: rgba(75, 85, 99, var(--tw-text-opacity));
+  color: rgb(71 85 105 / var(--tw-text-opacity))
+}
+
+.dark .markdown h6 {
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity))
 }
 
 .markdown blockquote {
-  --tw-border-opacity: 1;
-  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
   border-left-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-size: 1rem;
   line-height: 1.5rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
   --tw-text-opacity: 1;
-  color: rgba(75, 85, 99, var(--tw-text-opacity));
+  color: rgb(71 85 105 / var(--tw-text-opacity))
+}
+
+.dark .markdown blockquote {
+  --tw-border-opacity: 1;
+  border-color: rgb(71 85 105 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity))
 }
 
 .markdown code {
-  --tw-bg-opacity: 1;
-  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
-  border-radius: 0.25rem;
   display: inline;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
   padding-left: 0.25rem;
   padding-right: 0.25rem;
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.875rem;
+  line-height: 1.25rem
+}
+
+.dark .markdown code {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity))
 }
 
 .markdown pre {
-  --tw-bg-opacity: 1;
-  background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
   border-radius: 0.25rem;
-  padding: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  padding: 1rem
+}
+
+.dark .markdown pre {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity))
 }
 
 .markdown pre code {
-  background-color: transparent;
-  border-radius: 0px;
   display: block;
   overflow: visible;
-  padding: 0px;
+  border-radius: 0px;
+  background-color: transparent;
+  padding: 0px
 }
 
 .markdown ul {
-  font-size: 1rem;
-  line-height: 1.5rem;
   list-style-type: disc;
   padding-left: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem
 }
 
 .markdown ol {
-  font-size: 1rem;
-  line-height: 1.5rem;
   list-style-type: decimal;
   padding-left: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem
 }
 
 .markdown kbd {
+  display: inline-block;
   border-radius: 0.25rem;
   border-width: 1px;
-  display: inline-block;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 1rem;
   padding-left: 0.25rem;
   padding-right: 0.25rem;
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
-  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   vertical-align: middle;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
 }
 
 .markdown table {
   --tw-border-opacity: 1;
-  border-color: rgba(75, 85, 99, var(--tw-border-opacity));
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.5rem
 }
 
 .markdown th {
@@ -178,7 +211,7 @@
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-right: 0.75rem
 }
 
 .markdown td {
@@ -186,12 +219,17 @@
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-right: 0.75rem
 }
 
 /* Override pygments style background color. */
 
 .markdown .highlight pre {
   --tw-bg-opacity: 1 !important;
-  background-color: rgba(243, 244, 246, var(--tw-bg-opacity)) !important;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity)) !important
+}
+
+.dark .markdown .highlight pre {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity)) !important
 }
