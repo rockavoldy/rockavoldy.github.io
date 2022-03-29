@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "prod": "NODE_ENV=production tailwindcss -i ./css/styles.css -o ../static/assets/css/tailwind.css",
+    "prod": "NODE_ENV=production tailwindcss -i ./css/styles.css -o ../static/assets/css/tailwind.css --minify",
     "dev": "tailwindcss -i ./css/styles.css -o ../static/assets/css/tailwind.css --watch"
   },
   "devDependencies": {
