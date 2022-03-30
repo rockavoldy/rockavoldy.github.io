@@ -2,7 +2,7 @@
 {{ with $.Page.Resources.GetMatch (.Get "src") }}
 <figure>
   <a href="{{ .RelPermalink }}">
-    <img srcset='
+    <img loading="lazy" srcset='
       {{ (.Resize "320x").Permalink }} 320w,
       {{ (.Resize "600x").Permalink }} 600w,
       {{ .Permalink }} 1200w'
