@@ -5,6 +5,8 @@ title = "Akhmad"
 theme = "akhmad"
 canonifyURLs = true
 relativeURLs = true
+pygmentsCodefences = true
+pygmentsStyle = "dracula"
 
 [params]
     description = "Cerita, Catatan, dan tulisan untuk mendokumentasikan sesuatu."

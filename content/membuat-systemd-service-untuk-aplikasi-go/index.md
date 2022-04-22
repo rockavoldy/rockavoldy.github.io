@@ -9,7 +9,7 @@ draft: false
 
 1. Buat sebuah file dengan ekstensi `.service` di dalam `/lib/systemd/system/` directory. Dalam kasus ini, saya buat dengan  nama `pajak.service`
 2. Copy struktur "sederhana" dibawah ke file `pajak.service`
-    ```
+    ```shell
     [Unit]
     Description=kursPajak
 
