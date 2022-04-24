@@ -5,4 +5,5 @@ date: {{ .Date }}
 cover: false
 fullscreen: false
 draft: true
+summary: Summary dari artikel
 ---

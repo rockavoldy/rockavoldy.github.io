@@ -1,0 +1,8 @@
+version: '3'
+
+tasks:
+  new:
+    cmds:
+      - mkdir -p content/{{.CLI_ARGS}}
+      - hugo new content/{{.CLI_ARGS}}/index.md
+      - echo "New file already created"

@@ -2,6 +2,15 @@
 
 Source code of my blog generated with Hugo. Templates built from scratch with only Tailwindcss and minimal JavaScript.
 
+## Setup
+1. Install hugo from [gohugo.io](https://gohugo.io/getting-started/installing/)
+2. Install task from [taskfile.dev](https://taskfile.dev/#/installation)
+3. create new article with command
+    ```shell
+    task new -- title-of-your-new-article
+    ```
+4. enjoy!
+
 ## Roadmap
 
 - [x] Add Dark mode
