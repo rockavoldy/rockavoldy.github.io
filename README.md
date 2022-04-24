@@ -17,4 +17,5 @@ Source code of my blog generated with Hugo. Templates built from scratch with on
 - [ ] Popup image when clicked 
 - [ ] Fix markdown and syntax highlighter
 - [ ] Do some check on deprecated style from tailwind v2 to v3
-
+- [ ] When i already publish more than 10 articles, need to fix pagination on this theme
+- [ ] Migrate some hardcoded on gh-actions to taskfile, so it can be published to other CI easily without tightly coupled with gh-actions
