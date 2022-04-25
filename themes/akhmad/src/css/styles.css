@@ -8,6 +8,10 @@
   @apply text-slate-900 dark:text-slate-100 leading-normal break-words;
 }
 
+.markdown * {
+  line-height: calc(1em + .75rem);
+}
+
 .markdown > * + * {
   @apply mt-0 mb-4;
 }

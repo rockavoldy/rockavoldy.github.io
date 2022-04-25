@@ -2,9 +2,7 @@
 <html lang="id">
     {{- partial "head.html" . -}}
     <body class="antialiased font-sans bg-white text-slate-900 dark:bg-slate-800 dark:text-white">
-        <header>
-            {{- partial "header.html" . -}}
-        </header>
+        {{- partial "header.html" . -}}
         <div id="content">
         {{- block "main" . }}{{- end }}
         </div>

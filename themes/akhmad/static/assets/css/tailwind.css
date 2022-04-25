@@ -847,6 +847,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(241 245 249 / var(--tw-text-opacity));
 }
 
+.markdown * {
+  line-height: calc(1em + .75rem);
+}
+
 .markdown > * + * {
   margin-top: 0px;
   margin-bottom: 1rem;
