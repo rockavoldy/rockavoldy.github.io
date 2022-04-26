@@ -2,7 +2,37 @@ version: '3'
 
 tasks:
   new:
+    summary: |
+      Create new content
+
+      It will create new directory inside content dir, and create index.md for your post
+      I make this to be directory so i can put respective image file for that post in the same directory.
     cmds:
       - mkdir -p content/{{.CLI_ARGS}}
       - hugo new content/{{.CLI_ARGS}}/index.md
       - echo "New file already created"
+  build-css:
+    cmds:
+      - cd themes/akhmad/src/ && yarn dev-wo-watch
+    sources:
+      - themes/akhmad/src/**/*.css
+      - themes/akhmad/src/**/*.html
+  build-prod-css:
+    cmds:
+      - cd themes/akhmad/src && yarn install && yarn prod
+  dev:
+    summary: |
+      serve hugo, and watch css
+
+      When something changes in src file, it will rebuild the css
+    deps: [build-css]
+    cmds:
+      - hugo serve
+  prod:
+    summary: |
+      build production css, and generate static file minified
+
+      Need to run this one from CI
+    deps: [build-prod-css]
+    cmds:
+      - hugo --minify
