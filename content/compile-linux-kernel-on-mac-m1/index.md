@@ -10,11 +10,11 @@ summary: I just got my first Mac M1 machine, and this article show you step-by-s
 
 I just got my first Mac machine (it's cheapest Mac Mini M1), but it's really powerful machine, and i just got my Arducam 16MP Autofocus. So to see how powerful this mac is, and i need the latest kernel for my pi zero to use this cam, i'm going to compile linux kernel on this Mac and see how much time it takes to compile the linux kernel on this machine. I have done that on my work laptop (i5-6300U; 16GB RAM) and it takes around 1 hours (not really sure the exact time, but it's around there).
 
-So, the first thing we need is to setup this mac to compile the linux kernel, after some digging around, found [this link about cross-compiling kernel](https://www.raspberrypi.com/documentation/computers/linux_kernel.html#cross-compiling-the-kernel). I think most of the toolchains already installed with `xcode-select --install`, after installing xcode-select as usual, found it need `arm-linux-gnueabihf-gcc` to be there, but i can't find this package on brew, just got `arm-linux-gnueabihf-binutils`, so i try to install that one but the error is still there.
+So, the first thing we need is to setup this mac to compile the linux kernel, after some digging around, found [this link about cross-compiling kernel](https://www.raspberrypi.com/documentation/computers/linux_kernel.html#cross-compiling-the-kernel). I think most of the toolchains already installed with `xcode-select --install`, after installing xcode-select as usual, just need `arm-linux-gnueabihf-gcc` to be installed, but i can't find this package on brew, only got `arm-linux-gnueabihf-binutils`, so i try to install that one but the error is still there.
 
 {{< img src="img/error-arm-linux-gnueabihf.png" >}}
 
-After some digging around, found [this tutorial from geerlingguy](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile), on his tutorial, he compile the kernel from debian buster with Docker, i guess this would work, just need to change the compile script since on his tutorial he's using arm64 raspi (while mine, still using arm 32bit). So, let's going to step-by-step
+After some digging around, found [this tutorial from geerlingguy](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile), on his tutorial, he compile the kernel from debian buster with Docker, i guess this would work, just need to change the compile script since on his tutorial he's using arm64 raspi (while mine, still using arm 32bit). So, here we go
 
 1. Get the files from [his repository](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile) or you can find [mine (with only essentials files) here](https://github.com/rockavoldy/linux-kernel-cross-compile). If you have your SSH key, and want it to be passed to the container (for installing the kernel later directly to raspi), you can change [this line](https://github.com/rockavoldy/linux-kernel-cross-compile/blob/main/docker-compose.yml#L22) to your ssh key.
 2. After you're done cloning the files, you can create the container using docker-compose inside the repository, `docker compose up -d` is enough. It will download the OS images and setup the container for you with the toolchains needed.
@@ -75,7 +75,7 @@ For the result, on this Mac, i can compile the kernel in around 20 mins, can't r
 
 I think that's it for now, it's been 2 weeks for me with this Mac, and it's a powerful machine for me. I'm barely using all cores since my daily work is using python and Odoo, and it's actually run on my work laptop accessed with remote vscode and SSH from this Mac.
 
-As for credit, Thanks to [geerlingguy](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile) to provide the docker files, and to create some articles and viceos about linux and raspi, so Thank you.
+As for credit, Thanks to [geerlingguy](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile) to provide the docker files, and to create some articles and videos about linux and raspi.
 
 PS: 
 > - [TL;DR version here](https://github.com/rockavoldy/linux-kernel-cross-compile)
