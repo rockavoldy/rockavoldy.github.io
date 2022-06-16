@@ -1,11 +1,12 @@
 ---
 title: "Compile Linux Kernel on Mac M1"
-description: "Compile Linux Kernel on Mac M1"
+description: "I just got my first Mac M1 machine, and this article show you step-by-step i do to compile linux kernel for my Raspberry Pi Zero W on my Mac M1 using Docker."
 date: 2022-06-05T18:08:40+07:00
 cover: false
 fullscreen: false
 draft: false
 summary: I just got my first Mac M1 machine, and this article show you step-by-step i do to compile linux kernel for my Raspberry Pi Zero W on my Mac M1 using Docker.
+images: ['img/error-arm-linux-gnueabihf.png']
 ---
 
 I just got my first Mac machine (it's cheapest Mac Mini M1), but it's really powerful machine, and i just got my Arducam 16MP Autofocus. So to see how powerful this mac is, and i need the latest kernel for my pi zero to use this cam, i'm going to compile linux kernel on this Mac and see how much time it takes to compile the linux kernel on this machine. I have done that on my work laptop (i5-6300U; 16GB RAM) and it takes around 1 hours (not really sure the exact time, but it's around there).

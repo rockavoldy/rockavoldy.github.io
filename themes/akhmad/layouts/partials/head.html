@@ -15,4 +15,9 @@
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}assets/css/tailwind.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fira+Code:400,700">
+    <link rel="icon" type="image/ico" href="{{ .Site.BaseURL }}assets/favicon.ico">
+
+    <!-- Meta tag -->
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
 </head>

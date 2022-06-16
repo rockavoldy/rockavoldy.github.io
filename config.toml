@@ -10,4 +10,5 @@ pygmentsStyle = "dracula"
 paginate = 3
 
 [params]
-    description = "Cerita, Catatan, dan tulisan untuk mendokumentasikan sesuatu."
+    description = "Stories, build logs, and more about my journey on tech and programming."
+    title = "Akhmad Blog"

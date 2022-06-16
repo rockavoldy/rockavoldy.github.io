@@ -1,11 +1,12 @@
 ---
 title: "Ketika Branch Staging Dan Dev Sudah Tidak Sejalan"
-description: "Ketika Branch Staging Dan Dev Sudah Tidak Sejalan"
+description: "Ketika maintenance repository yang sudah besar, untuk deployment ini tidak bisa langsung merge dari branch dev ke branch master. Artikel ini berisi langkah-langkah untuk apply commit tertentu dari branch dev ke staging atau master."
 date: 2022-04-29T05:51:58+07:00
 cover: false
 fullscreen: false
 draft: false
 summary: Ketika maintenance repository yang sudah besar, untuk deployment ini tidak bisa langsung merge dari branch dev ke branch master. Artikel ini berisi langkah-langkah untuk apply commit tertentu dari branch dev ke staging atau master. 
+images: ["img/git-diff-shortstat.png"]
 ---
 
 Saat ini, di tempat saya sekarang dipercaya untuk jadi maintainer salah satu project dengan git history yang sudah lama. Mengurus deployment ke training server untuk test fitur-fitur atau fix atau improvement, dan melakukan deployment ke live server. 

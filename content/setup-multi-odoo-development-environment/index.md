@@ -1,6 +1,6 @@
 ---
 title: "Setup Multi Odoo Development Environment"
-description: "Setup Multi Odoo Development Environment"
+description: Ketika mengembangkan module untuk odoo, ada saatnya untuk berganti versi odoo seperti ketika proses migrasi module dari odoo 11 ke odoo 15. Artikel ini berisi konfigurasi untuk mengembangkan odoo dengan versi berbeda.
 date: 2022-04-24T17:21:23+07:00
 cover: false
 fullscreen: false
