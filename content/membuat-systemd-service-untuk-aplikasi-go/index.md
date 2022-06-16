@@ -6,7 +6,6 @@ cover: false
 fullscreen: false
 draft: false
 summary: Langkah-langkah membuat systemd service. systemd service ini bisa dipakai untuk mengatur aplikasi Go kita yang berjalan di background. Biasa digunakan untuk menjalankan aplikasi ketika awal boot.
-images: ["img/example-systemctl-status.png"]
 ---
 
 1. Buat sebuah file dengan ekstensi `.service` di dalam `/lib/systemd/system/` directory. Dalam kasus ini, saya buat dengan  nama `pajak.service`
