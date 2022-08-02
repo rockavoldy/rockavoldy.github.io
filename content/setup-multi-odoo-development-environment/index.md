@@ -40,7 +40,7 @@ summary: Ketika mengembangkan module untuk odoo, ada saatnya untuk berganti vers
         ```shell
         sudo apt install python3-dev libxml2-dev libxslt1-dev libldap2-dev \
         libsasl2-dev libtiff5-dev libjpeg8-dev libopenjp2-7-dev zlib1g-dev \
-        libfreetype6-dev liblcms2-dev libwebp-dev libharfbuzz-dev git
+        libfreetype6-dev liblcms2-dev libwebp-dev libharfbuzz-dev libpq-dev git
         ```
    3. Setelahnya, bisa cek virtualenv yang terinstall dengan command
         ```shell
