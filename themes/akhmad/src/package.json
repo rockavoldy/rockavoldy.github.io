@@ -5,6 +5,7 @@
     "dev-wo-watch": "tailwindcss -i ./css/styles.css -o ../static/assets/css/tailwind.css"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.4",
     "postcss": "^8.4.12",
     "tailwindcss": "^3.1.3"
