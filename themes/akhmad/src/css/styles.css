@@ -2,8 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* remove backtick */
+.prose :where(code):not(:where([class~="not-prose"] *))::before {
+  content: unset;
+}
+.prose :where(code):not(:where([class~="not-prose"] *))::after {
+  content: unset;
+}
+
+/* TODO: Currently is not used anywhere, maybe it will be needed later? */
 /* Markdown style */
-.markdown {
+/* .markdown {
   @apply text-slate-900 dark:text-slate-100 leading-normal break-words;
 }
 
@@ -97,9 +106,9 @@
 
 .markdown td {
   @apply border py-1 px-3;
-}
+} */
 
 /* Override pygments style background color. */
-.markdown .highlight pre {
+/* .markdown .highlight pre {
   @apply bg-gray-100 dark:bg-slate-600 !important;
-}
+} */

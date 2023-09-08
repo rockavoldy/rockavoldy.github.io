@@ -9,6 +9,9 @@
                 {{- block "main" . }}{{- end }}
                 </div>
             </div>
+            <div class="bottom-0 absolute w-full h-10 text-center">
+                {{- partial "footer.html" . -}}
+            </div>
             <script>
                 const svgDark = document.getElementById('btn_dark');
                 const svgLight = document.getElementById('btn_light');
@@ -43,9 +46,6 @@
                 }
             </script>
             <script async src="https://umami.akhmad.id/script.js" data-website-id="5818ae25-1b72-473c-a58e-4f35e78ce30f"></script>
-            <div class="bottom-0 absolute w-full h-10">
-                {{- partial "footer.html" . -}}
-            </div>
         </div>
     </body>
 </html>

@@ -1,11 +1,16 @@
 {{ define "main" }}
 <main>
     {{ partial "postheader.html" . }}
-    <article class="max-w-xl md:max-w-2xl xl:max-w-3xl mx-auto px-6 sm:px-12 pt-12">
-        <div class="markdown">
+    <article class="max-w-xl md:max-w-2xl xl:max-w-4xl mx-auto px-6 sm:px-12 pt-12">
+        <div class="prose lg:prose-lg dark:prose-invert max-w-xl md:max-w-2xl xl:max-w-4xl">
             {{ .Content }}
         </div>
     </article>
+    <!-- <article class="max-w-xl md:max-w-2xl xl:max-w-3xl mx-auto px-6 sm:px-12 pt-12">
+        <div class="markdown">
+            {{ .Content }}
+        </div>
+    </article> -->
 </main>
 <br><br>
 {{ end }}
