@@ -28,6 +28,12 @@ subdomain_host = your.domain.tld
 - `subdomain_host`: will be used as a host domain, make sure your DNS already have A record for `*.your.domain.tld` to the server IP, so then when your client put `test` in the `subdomain` config, and visit `http://test.your.domain.tld`, it will be redirected to the client that have `subdomain` filled as `test`.
 - `vhost_http_port`: this port will be used to accept request to the server, here i put `80`, then when someone access `test.your.domain.tld`, the service will catch the request, check if there is any client use `test` in their `subdomain`, when found, it will redirect the request to that client. This http_port can be changed to others like `8080` if you have another http server like nginx or caddy on the same server, then use reverse_proxy feature to forward request from your http server to FRPs
 
+Then run the server with
+```sh
+/usr/local/bin/frps -c /etc/frps.ini
+```
+It will run the reverse-proxy server for the client to connect.
+
 ### Client
 As for the client, you need to download at the same [release page](https://github.com/fatedier/frp/releases), there will be `frpc` app when you extract the compressed file, move it to `/usr/local/bin/` too.
 
@@ -50,5 +56,13 @@ subdomain = test
 - `local_port`: is your listen port of your app, says yours running at port `8080`, then just fill it with `8080`
 - `subdomain`: is the subdomain that will be use to access this client app, here i put `test`, and when we visit `http://test.your.domain.tld`, it will be forwarded to the app running at `local_ip:local_port`
 
-You can see my configuration with systemd service and caddyserver reverse_proxy in [this gist](https://gist.github.com/rockavoldy/c0aebe0ea394c2252c53021113a2aeca). As for the complete configuration, you can always check the [repository page here](https://github.com/fatedier/frp).
+Now, same like the server, run the client with
+```sh
+/usr/local/bin/frpc -c /etc/frpc.ini
+```
+It will try forward the port you have been set in `test` section to your FRP Server. After you have done this, try to access `http://test.your.domain.tld` (`test` is taken from the subdomain you have set in Client, then followed by `your.domain.tld`, taken from the subdomain_host you have set in the FRP Server configuration).
+
+If you want to implement https, see my [caddyserver configuration here](https://gist.github.com/rockavoldy/c0aebe0ea394c2252c53021113a2aeca#http-server-reverse-proxy).
+
+You can also see my configuration with systemd service in [this gist](https://gist.github.com/rockavoldy/c0aebe0ea394c2252c53021113a2aeca). As for the complete configuration, you can always check the [repository page here](https://github.com/fatedier/frp).
 
