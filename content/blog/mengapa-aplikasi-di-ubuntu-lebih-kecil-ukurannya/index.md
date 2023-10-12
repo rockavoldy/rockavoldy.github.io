@@ -6,6 +6,8 @@ date: 2020-02-09 04:51:41
 cover: ""
 fullscreen: false
 draft: false
+aliases:
+    - /mengapa-aplikasi-di-ubuntu-lebih-kecil-ukurannya
 ---
 
 Kalian yang baru migrasi dari Windows atau macOS ke Linux khususnya ubuntu bertanya-tanya "Kenapa aplikasi di ubuntu lebih kecil ukurannya daripada yang ada di Windows atau macOS?". Saya akan mencoba menjawab pertanyaan ini dari pengalaman Saya sendiri dan juga rangkuman dari tulisan yang ada di internet.

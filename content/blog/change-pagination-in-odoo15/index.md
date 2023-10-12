@@ -6,6 +6,8 @@ cover: false
 fullscreen: false
 draft: false
 summary: In this article, i add a way to implement custom pagination numbering with ellipsis in the middle of the page number, and to make sure that first and last page will always be shown.
+aliases:
+    - /change-pagination-in-odoo15
 ---
 
 Currently odoo eCommerce is already good to start somewhere. But sometimes, client want to change something that are not covered in odoo base. For example, they want to change the style of pagination, they want to change the numbering, or they want to completely changes the style and have an ellipsis with first and last page always shown. In this article, i will share how to achieve that behavior in Odoo15.

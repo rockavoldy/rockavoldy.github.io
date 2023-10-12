@@ -6,6 +6,8 @@ date: 2020-02-29 22:23:49
 cover:
 fullscreen: false
 draft: false
+aliases:
+    - /things-i-learn-hackathon-pandi-10
 ---
 
 ### Hackathon Pandi 10

@@ -6,6 +6,8 @@ cover: false
 fullscreen: false
 draft: false
 summary: Setup your reverse-tunneling service like ngrok in your server using Fast Reverse Proxy (FRP).
+aliases:
+    - /create-your-own-ngrok-with-frp
 ---
 
 ## Introduction

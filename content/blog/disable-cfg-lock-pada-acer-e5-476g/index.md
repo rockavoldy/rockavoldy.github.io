@@ -5,6 +5,8 @@ date: 2020-10-10 11:41:17
 cover: false
 fullscreen: false
 draft: false
+aliases:
+    - /disable-cfg-lock-pada-acer-e5-476g
 ---
 
 Saya sudah lama menggunakan Hackintosh, dari sekitar Tahun 2018 sampai saat ini masih memakainya. Alasan saya dengan Hackintosh ini karena menarik untuk dicoba, dimana saya harus mengenal laptop saya lebih dalam tidak hanya _hardware_, tetapi konfigurasi BIOSnya sendiri, dan bagaimana cara OS mengenali hardwarenya.

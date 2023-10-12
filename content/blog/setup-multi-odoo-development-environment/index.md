@@ -6,6 +6,8 @@ cover: false
 fullscreen: false
 draft: false
 summary: Ketika mengembangkan module untuk odoo, ada saatnya untuk berganti versi odoo seperti ketika proses migrasi module dari odoo 11 ke odoo 15. Artikel ini berisi konfigurasi untuk mengembangkan odoo dengan versi berbeda.
+aliases:
+    - /setup-multi-odoo-development-environment
 ---
 
 ## Prerequisite
